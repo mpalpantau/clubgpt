@@ -1,0 +1,875 @@
+{
+  "team": "Brisbane Roar",
+  "season": "2025-26",
+  "competition": "A-League Women",
+  "data_source": "Impect",
+  "matches": [
+    {
+      "matchday": 1,
+      "opponent": "Wellington Phoenix",
+      "venue": "home",
+      "date": "2026-01-03",
+      "result": "L 0-3",
+      "goals_for": 0,
+      "goals_against": 3,
+      "metrics": {
+        "style": {
+          "possession_control": 0.51,
+          "heavy_metal": 0.42,
+          "underdog_pressing": 0.45,
+          "direct_aerial": 0.54,
+          "safety_first": 0.32,
+          "counter_attacking": 0.24
+        },
+        "expected_goals": {
+          "packing_xg": 2.05,
+          "shot_based_xg": 2.29,
+          "post_shot_xg": 2.61
+        },
+        "buildup": {
+          "ball_progression": 237,
+          "defensive_ball_control": 151,
+          "critical_ball_loss": 8
+        },
+        "opponent": {
+          "opponent_ball_progression": 223,
+          "offensive_interventions": 107,
+          "own_defence_broken": 42
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 40,
+          "offensive_efficiency": 0,
+          "defensive_interventions": 236
+        },
+        "possession": {
+          "ball_possession_rate": 0.613,
+          "passing_accuracy": 0.844,
+          "successful_passes": 314,
+          "unsuccessful_passes": 58
+        },
+        "duels": {
+          "duel_rate": 0.436,
+          "ground_duel_success": 0.397,
+          "aerial_duel_success": 0.516
+        },
+        "shots": {
+          "total_shots": 22,
+          "shots_on_target": 6
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.17,
+          "avg_pressure_height_m": 65.8,
+          "avg_pressure_buildup": 21.25,
+          "forced_high_passes_pct": 0.18,
+          "avg_pressure_counter_press": 35.69
+        }
+      }
+    },
+    {
+      "matchday": 1,
+      "opponent": "Wellington Phoenix",
+      "venue": "away",
+      "date": "2026-01-03",
+      "result": "W 3-0",
+      "goals_for": 3,
+      "goals_against": 0,
+      "metrics": {
+        "style": {
+          "possession_control": 0.39,
+          "heavy_metal": 0.52,
+          "underdog_pressing": 0.39,
+          "direct_aerial": 0.74,
+          "safety_first": 0.59,
+          "counter_attacking": 0.67
+        },
+        "expected_goals": {
+          "packing_xg": 1.44,
+          "shot_based_xg": 1.29,
+          "post_shot_xg": 1.46
+        },
+        "buildup": {
+          "ball_progression": 223,
+          "defensive_ball_control": 64,
+          "critical_ball_loss": 1
+        },
+        "opponent": {
+          "opponent_ball_progression": 237,
+          "offensive_interventions": 227,
+          "own_defence_broken": 40
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 42,
+          "offensive_efficiency": 14,
+          "defensive_interventions": 165
+        },
+        "possession": {
+          "ball_possession_rate": 0.387,
+          "passing_accuracy": 0.692,
+          "successful_passes": 119,
+          "unsuccessful_passes": 53
+        },
+        "duels": {
+          "duel_rate": 0.564,
+          "ground_duel_success": 0.603,
+          "aerial_duel_success": 0.484
+        },
+        "shots": {
+          "total_shots": 10,
+          "shots_on_target": 5
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.22,
+          "avg_pressure_height_m": 49.0,
+          "avg_pressure_buildup": 15.02,
+          "forced_high_passes_pct": 0.12,
+          "avg_pressure_counter_press": 26.04
+        }
+      }
+    },
+    {
+      "matchday": 3,
+      "opponent": "Melbourne City FC",
+      "venue": "away",
+      "date": "2026-01-06",
+      "result": "L 0-1",
+      "goals_for": 0,
+      "goals_against": 1,
+      "metrics": {
+        "style": {
+          "possession_control": 0.12,
+          "heavy_metal": 0.26,
+          "underdog_pressing": 0.32,
+          "direct_aerial": 0.43,
+          "safety_first": 0.58,
+          "counter_attacking": 0.41
+        },
+        "expected_goals": {
+          "packing_xg": 0.23,
+          "shot_based_xg": 0.45,
+          "post_shot_xg": 0.22
+        },
+        "buildup": {
+          "ball_progression": 217,
+          "defensive_ball_control": 136,
+          "critical_ball_loss": 9
+        },
+        "opponent": {
+          "opponent_ball_progression": 442,
+          "offensive_interventions": 155,
+          "own_defence_broken": 68
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 34,
+          "offensive_efficiency": 0,
+          "defensive_interventions": 309
+        },
+        "possession": {
+          "ball_possession_rate": 0.351,
+          "passing_accuracy": 0.756,
+          "successful_passes": 152,
+          "unsuccessful_passes": 49
+        },
+        "duels": {
+          "duel_rate": 0.54,
+          "ground_duel_success": 0.5,
+          "aerial_duel_success": 0.643
+        },
+        "shots": {
+          "total_shots": 10,
+          "shots_on_target": 1
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.19,
+          "avg_pressure_height_m": 57.9,
+          "avg_pressure_buildup": 12.97,
+          "forced_high_passes_pct": 0.07,
+          "avg_pressure_counter_press": 29.44
+        }
+      }
+    },
+    {
+      "matchday": 3,
+      "opponent": "Melbourne City FC",
+      "venue": "home",
+      "date": "2026-01-06",
+      "result": "W 1-0",
+      "goals_for": 1,
+      "goals_against": 0,
+      "metrics": {
+        "style": {
+          "possession_control": 0.89,
+          "heavy_metal": 0.55,
+          "underdog_pressing": 0.63,
+          "direct_aerial": 0.53,
+          "safety_first": 0.41,
+          "counter_attacking": 0.60
+        },
+        "expected_goals": {
+          "packing_xg": 2.17,
+          "shot_based_xg": 1.57,
+          "post_shot_xg": 0.96
+        },
+        "buildup": {
+          "ball_progression": 442,
+          "defensive_ball_control": 109,
+          "critical_ball_loss": 10
+        },
+        "opponent": {
+          "opponent_ball_progression": 217,
+          "offensive_interventions": 181,
+          "own_defence_broken": 34
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 68,
+          "offensive_efficiency": 68,
+          "defensive_interventions": 208
+        },
+        "possession": {
+          "ball_possession_rate": 0.649,
+          "passing_accuracy": 0.92,
+          "successful_passes": 472,
+          "unsuccessful_passes": 41
+        },
+        "duels": {
+          "duel_rate": 0.46,
+          "ground_duel_success": 0.5,
+          "aerial_duel_success": 0.357
+        },
+        "shots": {
+          "total_shots": 14,
+          "shots_on_target": 3
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.29,
+          "avg_pressure_height_m": 68.5,
+          "avg_pressure_buildup": 15.59,
+          "forced_high_passes_pct": 0.30,
+          "avg_pressure_counter_press": 31.85
+        }
+      }
+    },
+    {
+      "matchday": 4,
+      "opponent": "Perth Glory",
+      "venue": "away",
+      "date": "2026-01-16",
+      "result": "W 2-1",
+      "goals_for": 2,
+      "goals_against": 1,
+      "metrics": {
+        "style": {
+          "possession_control": 0.58,
+          "heavy_metal": 0.50,
+          "underdog_pressing": 0.39,
+          "direct_aerial": 0.67,
+          "safety_first": 0.63,
+          "counter_attacking": 0.51
+        },
+        "expected_goals": {
+          "packing_xg": 0.70,
+          "shot_based_xg": 1.78,
+          "post_shot_xg": 2.12
+        },
+        "buildup": {
+          "ball_progression": 423,
+          "defensive_ball_control": 101,
+          "critical_ball_loss": 12
+        },
+        "opponent": {
+          "opponent_ball_progression": 343,
+          "offensive_interventions": 139,
+          "own_defence_broken": 47
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 55,
+          "offensive_efficiency": 27,
+          "defensive_interventions": 258
+        },
+        "possession": {
+          "ball_possession_rate": 0.467,
+          "passing_accuracy": 0.85,
+          "successful_passes": 283,
+          "unsuccessful_passes": 50
+        },
+        "duels": {
+          "duel_rate": 0.483,
+          "ground_duel_success": 0.49,
+          "aerial_duel_success": 0.472
+        },
+        "shots": {
+          "total_shots": 20,
+          "shots_on_target": 7
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.40,
+          "avg_pressure_height_m": 62.3,
+          "avg_pressure_buildup": 9.58,
+          "forced_high_passes_pct": 0.14,
+          "avg_pressure_counter_press": 27.66
+        }
+      }
+    },
+    {
+      "matchday": 4,
+      "opponent": "Perth Glory",
+      "venue": "home",
+      "date": "2026-01-16",
+      "result": "L 1-2",
+      "goals_for": 1,
+      "goals_against": 2,
+      "metrics": {
+        "style": {
+          "possession_control": 0.55,
+          "heavy_metal": 0.42,
+          "underdog_pressing": 0.39,
+          "direct_aerial": 0.46,
+          "safety_first": 0.58,
+          "counter_attacking": 0.49
+        },
+        "expected_goals": {
+          "packing_xg": 1.14,
+          "shot_based_xg": 1.20,
+          "post_shot_xg": 1.83
+        },
+        "buildup": {
+          "ball_progression": 343,
+          "defensive_ball_control": 82,
+          "critical_ball_loss": 2
+        },
+        "opponent": {
+          "opponent_ball_progression": 423,
+          "offensive_interventions": 145,
+          "own_defence_broken": 55
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 47,
+          "offensive_efficiency": 47,
+          "defensive_interventions": 276
+        },
+        "possession": {
+          "ball_possession_rate": 0.533,
+          "passing_accuracy": 0.84,
+          "successful_passes": 347,
+          "unsuccessful_passes": 66
+        },
+        "duels": {
+          "duel_rate": 0.517,
+          "ground_duel_success": 0.51,
+          "aerial_duel_success": 0.528
+        },
+        "shots": {
+          "total_shots": 9,
+          "shots_on_target": 5
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.14,
+          "avg_pressure_height_m": 52.6,
+          "avg_pressure_buildup": 9.49,
+          "forced_high_passes_pct": 0.03,
+          "avg_pressure_counter_press": 26.72
+        }
+      }
+    },
+    {
+      "matchday": 5,
+      "opponent": "Wellington Phoenix",
+      "venue": "away",
+      "date": "2025-10-26",
+      "result": "L 1-2",
+      "goals_for": 1,
+      "goals_against": 2,
+      "metrics": {
+        "style": {
+          "possession_control": 0.20,
+          "heavy_metal": 0.38,
+          "underdog_pressing": 0.42,
+          "direct_aerial": 0.63,
+          "safety_first": 0.68,
+          "counter_attacking": 0.59
+        },
+        "expected_goals": {
+          "packing_xg": 0.98,
+          "shot_based_xg": 0.86,
+          "post_shot_xg": 0.22
+        },
+        "buildup": {
+          "ball_progression": 241,
+          "defensive_ball_control": 128,
+          "critical_ball_loss": 8
+        },
+        "opponent": {
+          "opponent_ball_progression": 346,
+          "offensive_interventions": 196,
+          "own_defence_broken": 49
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 38,
+          "offensive_efficiency": 38,
+          "defensive_interventions": 271
+        },
+        "possession": {
+          "ball_possession_rate": 0.385,
+          "passing_accuracy": 0.624,
+          "successful_passes": 133,
+          "unsuccessful_passes": 80
+        },
+        "duels": {
+          "duel_rate": 0.512,
+          "ground_duel_success": 0.478,
+          "aerial_duel_success": 0.621
+        },
+        "shots": {
+          "total_shots": 6,
+          "shots_on_target": 1
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.07,
+          "avg_pressure_height_m": 62.3,
+          "avg_pressure_buildup": 13.88,
+          "forced_high_passes_pct": 0.16,
+          "avg_pressure_counter_press": 33.44
+        }
+      }
+    },
+    {
+      "matchday": 5,
+      "opponent": "Wellington Phoenix",
+      "venue": "home",
+      "date": "2025-10-26",
+      "result": "W 2-1",
+      "goals_for": 2,
+      "goals_against": 1,
+      "metrics": {
+        "style": {
+          "possession_control": 0.53,
+          "heavy_metal": 0.60,
+          "underdog_pressing": 0.65,
+          "direct_aerial": 0.61,
+          "safety_first": 0.45,
+          "counter_attacking": 0.46
+        },
+        "expected_goals": {
+          "packing_xg": 1.53,
+          "shot_based_xg": 1.68,
+          "post_shot_xg": 1.36
+        },
+        "buildup": {
+          "ball_progression": 346,
+          "defensive_ball_control": 146,
+          "critical_ball_loss": 11
+        },
+        "opponent": {
+          "opponent_ball_progression": 241,
+          "offensive_interventions": 201,
+          "own_defence_broken": 38
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 49,
+          "offensive_efficiency": 24,
+          "defensive_interventions": 244
+        },
+        "possession": {
+          "ball_possession_rate": 0.615,
+          "passing_accuracy": 0.837,
+          "successful_passes": 340,
+          "unsuccessful_passes": 66
+        },
+        "duels": {
+          "duel_rate": 0.488,
+          "ground_duel_success": 0.522,
+          "aerial_duel_success": 0.379
+        },
+        "shots": {
+          "total_shots": 13,
+          "shots_on_target": 5
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.27,
+          "avg_pressure_height_m": 64.8,
+          "avg_pressure_buildup": 18.33,
+          "forced_high_passes_pct": 0.19,
+          "avg_pressure_counter_press": 34.38
+        }
+      }
+    },
+    {
+      "matchday": 6,
+      "opponent": "Western Sydney Wanderers",
+      "venue": "away",
+      "date": "2025-12-13",
+      "result": "D 0-0",
+      "goals_for": 0,
+      "goals_against": 0,
+      "metrics": {
+        "style": {
+          "possession_control": 0.37,
+          "heavy_metal": 0.27,
+          "underdog_pressing": 0.26,
+          "direct_aerial": 0.39,
+          "safety_first": 0.69,
+          "counter_attacking": 0.59
+        },
+        "expected_goals": {
+          "packing_xg": 0.31,
+          "shot_based_xg": 0.40,
+          "post_shot_xg": 0.11
+        },
+        "buildup": {
+          "ball_progression": 266,
+          "defensive_ball_control": 112,
+          "critical_ball_loss": 6
+        },
+        "opponent": {
+          "opponent_ball_progression": 320,
+          "offensive_interventions": 151,
+          "own_defence_broken": 39
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 36,
+          "offensive_efficiency": 0,
+          "defensive_interventions": 210
+        },
+        "possession": {
+          "ball_possession_rate": 0.452,
+          "passing_accuracy": 0.836,
+          "successful_passes": 239,
+          "unsuccessful_passes": 47
+        },
+        "duels": {
+          "duel_rate": 0.486,
+          "ground_duel_success": 0.481,
+          "aerial_duel_success": 0.5
+        },
+        "shots": {
+          "total_shots": 7,
+          "shots_on_target": 1
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.0,
+          "avg_pressure_height_m": 50.3,
+          "avg_pressure_buildup": 13.76,
+          "forced_high_passes_pct": 0.07,
+          "avg_pressure_counter_press": 30.44
+        }
+      }
+    },
+    {
+      "matchday": 6,
+      "opponent": "Western Sydney Wanderers",
+      "venue": "home",
+      "date": "2025-12-13",
+      "result": "D 0-0",
+      "goals_for": 0,
+      "goals_against": 0,
+      "metrics": {
+        "style": {
+          "possession_control": 0.69,
+          "heavy_metal": 0.40,
+          "underdog_pressing": 0.47,
+          "direct_aerial": 0.40,
+          "safety_first": 0.62,
+          "counter_attacking": 0.37
+        },
+        "expected_goals": {
+          "packing_xg": 1.56,
+          "shot_based_xg": 1.14,
+          "post_shot_xg": 0.41
+        },
+        "buildup": {
+          "ball_progression": 320,
+          "defensive_ball_control": 104,
+          "critical_ball_loss": 6
+        },
+        "opponent": {
+          "opponent_ball_progression": 266,
+          "offensive_interventions": 143,
+          "own_defence_broken": 36
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 39,
+          "offensive_efficiency": 0,
+          "defensive_interventions": 170
+        },
+        "possession": {
+          "ball_possession_rate": 0.548,
+          "passing_accuracy": 0.903,
+          "successful_passes": 346,
+          "unsuccessful_passes": 37
+        },
+        "duels": {
+          "duel_rate": 0.514,
+          "ground_duel_success": 0.519,
+          "aerial_duel_success": 0.5
+        },
+        "shots": {
+          "total_shots": 12,
+          "shots_on_target": 3
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.29,
+          "avg_pressure_height_m": 70.2,
+          "avg_pressure_buildup": 13.71,
+          "forced_high_passes_pct": 0.19,
+          "avg_pressure_counter_press": 27.71
+        }
+      }
+    },
+    {
+      "matchday": 7,
+      "opponent": "Adelaide United",
+      "venue": "home",
+      "date": "2026-01-24",
+      "result": "L 2-3",
+      "goals_for": 2,
+      "goals_against": 3,
+      "metrics": {
+        "style": {
+          "possession_control": 0.41,
+          "heavy_metal": 0.67,
+          "underdog_pressing": 0.74,
+          "direct_aerial": 0.69,
+          "safety_first": 0.56,
+          "counter_attacking": 0.67
+        },
+        "expected_goals": {
+          "packing_xg": 1.65,
+          "shot_based_xg": 1.96,
+          "post_shot_xg": 2.17
+        },
+        "buildup": {
+          "ball_progression": 378,
+          "defensive_ball_control": 153,
+          "critical_ball_loss": 9
+        },
+        "opponent": {
+          "opponent_ball_progression": 327,
+          "offensive_interventions": 193,
+          "own_defence_broken": 53
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 68,
+          "offensive_efficiency": 34,
+          "defensive_interventions": 274
+        },
+        "possession": {
+          "ball_possession_rate": 0.448,
+          "passing_accuracy": 0.799,
+          "successful_passes": 235,
+          "unsuccessful_passes": 59
+        },
+        "duels": {
+          "duel_rate": 0.557,
+          "ground_duel_success": 0.557,
+          "aerial_duel_success": 0.556
+        },
+        "shots": {
+          "total_shots": 26,
+          "shots_on_target": 10
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.32,
+          "avg_pressure_height_m": 69.7,
+          "avg_pressure_buildup": 15.68,
+          "forced_high_passes_pct": 0.33,
+          "avg_pressure_counter_press": 29.16
+        }
+      }
+    },
+    {
+      "matchday": 7,
+      "opponent": "Adelaide United",
+      "venue": "away",
+      "date": "2026-01-24",
+      "result": "W 3-2",
+      "goals_for": 3,
+      "goals_against": 2,
+      "metrics": {
+        "style": {
+          "possession_control": 0.46,
+          "heavy_metal": 0.62,
+          "underdog_pressing": 0.62,
+          "direct_aerial": 0.48,
+          "safety_first": 0.41,
+          "counter_attacking": 0.48
+        },
+        "expected_goals": {
+          "packing_xg": 1.19,
+          "shot_based_xg": 1.19,
+          "post_shot_xg": 2.03
+        },
+        "buildup": {
+          "ball_progression": 327,
+          "defensive_ball_control": 126,
+          "critical_ball_loss": 7
+        },
+        "opponent": {
+          "opponent_ball_progression": 378,
+          "offensive_interventions": 206,
+          "own_defence_broken": 68
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 53,
+          "offensive_efficiency": 18,
+          "defensive_interventions": 257
+        },
+        "possession": {
+          "ball_possession_rate": 0.552,
+          "passing_accuracy": 0.824,
+          "successful_passes": 355,
+          "unsuccessful_passes": 76
+        },
+        "duels": {
+          "duel_rate": 0.443,
+          "ground_duel_success": 0.443,
+          "aerial_duel_success": 0.444
+        },
+        "shots": {
+          "total_shots": 8,
+          "shots_on_target": 4
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.15,
+          "avg_pressure_height_m": 67.9,
+          "avg_pressure_buildup": 15.80,
+          "forced_high_passes_pct": 0.29,
+          "avg_pressure_counter_press": 31.18
+        }
+      }
+    },
+    {
+      "matchday": 8,
+      "opponent": "Auckland FC",
+      "venue": "away",
+      "date": "2025-11-23",
+      "result": "D 1-1",
+      "goals_for": 1,
+      "goals_against": 1,
+      "metrics": {
+        "style": {
+          "possession_control": 0.68,
+          "heavy_metal": 0.48,
+          "underdog_pressing": 0.49,
+          "direct_aerial": 0.40,
+          "safety_first": 0.63,
+          "counter_attacking": 0.39
+        },
+        "expected_goals": {
+          "packing_xg": 1.45,
+          "shot_based_xg": 1.77,
+          "post_shot_xg": 1.56
+        },
+        "buildup": {
+          "ball_progression": 255,
+          "defensive_ball_control": 98,
+          "critical_ball_loss": 3
+        },
+        "opponent": {
+          "opponent_ball_progression": 235,
+          "offensive_interventions": 187,
+          "own_defence_broken": 25
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 33,
+          "offensive_efficiency": 33,
+          "defensive_interventions": 187
+        },
+        "possession": {
+          "ball_possession_rate": 0.55,
+          "passing_accuracy": 0.808,
+          "successful_passes": 274,
+          "unsuccessful_passes": 65
+        },
+        "duels": {
+          "duel_rate": 0.438,
+          "ground_duel_success": 0.438,
+          "aerial_duel_success": 0.438
+        },
+        "shots": {
+          "total_shots": 17,
+          "shots_on_target": 6
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.14,
+          "avg_pressure_height_m": 61.2,
+          "avg_pressure_buildup": 19.02,
+          "forced_high_passes_pct": 0.15,
+          "avg_pressure_counter_press": 30.6
+        }
+      }
+    },
+    {
+      "matchday": 8,
+      "opponent": "Auckland FC",
+      "venue": "home",
+      "date": "2025-11-23",
+      "result": "D 1-1",
+      "goals_for": 1,
+      "goals_against": 1,
+      "metrics": {
+        "style": {
+          "possession_control": 0.41,
+          "heavy_metal": 0.38,
+          "underdog_pressing": 0.39,
+          "direct_aerial": 0.62,
+          "safety_first": 0.47,
+          "counter_attacking": 0.32
+        },
+        "expected_goals": {
+          "packing_xg": 0.71,
+          "shot_based_xg": 1.04,
+          "post_shot_xg": 0.75
+        },
+        "buildup": {
+          "ball_progression": 235,
+          "defensive_ball_control": 133,
+          "critical_ball_loss": 7
+        },
+        "opponent": {
+          "opponent_ball_progression": 255,
+          "offensive_interventions": 150,
+          "own_defence_broken": 33
+        },
+        "efficiency": {
+          "breaking_opponent_defence": 25,
+          "offensive_efficiency": 25,
+          "defensive_interventions": 225
+        },
+        "possession": {
+          "ball_possession_rate": 0.45,
+          "passing_accuracy": 0.80,
+          "successful_passes": 250,
+          "unsuccessful_passes": 62
+        },
+        "duels": {
+          "duel_rate": 0.50,
+          "ground_duel_success": 0.50,
+          "aerial_duel_success": 0.50
+        },
+        "shots": {
+          "total_shots": 10,
+          "shots_on_target": 4
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.20,
+          "avg_pressure_height_m": 58.0,
+          "avg_pressure_buildup": 16.0,
+          "forced_high_passes_pct": 0.12,
+          "avg_pressure_counter_press": 28.0
+        }
+      }
+    }
+  ],
+  "summary": {
+    "total_matches": 14,
+    "record": {
+      "wins": 6,
+      "draws": 4,
+      "losses": 4
+    },
+    "goals_for": 17,
+    "goals_against": 16,
+    "avg_xg": 1.26,
+    "avg_possession": 0.49,
+    "avg_pass_accuracy": 0.81
+  }
+}

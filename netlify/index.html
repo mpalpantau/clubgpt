@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubGPT | Brisbane Roar FC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #F97316;
+            --primary-dark: #EA580C;
+            --primary-light: #FFF7ED;
+            --bg: #FFFFFF;
+            --bg-secondary: #F8FAFC;
+            --bg-tertiary: #F1F5F9;
+            --border: #E2E8F0;
+            --border-dark: #CBD5E1;
+            --text: #0F172A;
+            --text-secondary: #475569;
+            --text-muted: #94A3B8;
+            --success: #10B981;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-secondary);
+            color: var(--text);
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .app { display: grid; grid-template-columns: 260px 1fr; min-height: 100vh; }
+        
+        /* Sidebar */
+        .sidebar {
+            background: var(--bg);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            box-shadow: var(--shadow);
+        }
+        
+        .logo-text h1 { font-size: 17px; font-weight: 700; color: var(--text); }
+        .logo-text span { font-size: 12px; color: var(--text-muted); font-weight: 500; }
+        
+        .season-card {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: white;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .season-card h3 {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        
+        .record-display { display: flex; justify-content: space-between; margin-bottom: 16px; }
+        .record-item { text-align: center; }
+        .record-item .value { font-size: 28px; font-weight: 800; }
+        .record-item .label { font-size: 10px; text-transform: uppercase; opacity: 0.8; margin-top: 2px; font-weight: 600; }
+        
+        .season-stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .mini-stat { background: rgba(255,255,255,0.15); border-radius: 10px; padding: 12px; text-align: center; }
+        .mini-stat .value { font-size: 18px; font-weight: 700; }
+        .mini-stat .label { font-size: 10px; opacity: 0.8; margin-top: 2px; }
+        
+        .nav-section { margin-bottom: 20px; }
+        .nav-section h3 {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            font-weight: 600;
+            padding: 0 4px;
+        }
+        
+        .nav-btn {
+            width: 100%;
+            padding: 10px 12px;
+            background: transparent;
+            border: none;
+            border-radius: 10px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 500;
+            text-align: left;
+            cursor: pointer;
+            margin-bottom: 4px;
+            transition: all 0.15s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: inherit;
+        }
+        
+        .nav-btn:hover { background: var(--bg-tertiary); color: var(--text); }
+        .nav-btn .icon { font-size: 16px; width: 20px; text-align: center; }
+        
+        .data-status { margin-top: auto; padding-top: 20px; border-top: 1px solid var(--border); }
+        .data-status h3 {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .status-item { display: flex; align-items: center; gap: 10px; padding: 6px 0; font-size: 12px; color: var(--text-secondary); }
+        .status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--success); }
+        .status-dot.pending { background: var(--border-dark); }
+        
+        /* API Key Section */
+        .api-section {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+        
+        .api-input {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 11px;
+            margin-top: 8px;
+            font-family: monospace;
+        }
+        
+        .api-status {
+            font-size: 11px;
+            margin-top: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .api-status.connected { color: var(--success); }
+        .api-status.missing { color: var(--primary); }
+        
+        /* Main Content */
+        .main { display: flex; flex-direction: column; height: 100vh; background: var(--bg-secondary); }
+        
+        .header {
+            padding: 16px 28px;
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .header-left h2 { font-size: 18px; font-weight: 600; color: var(--text); }
+        .header-left p { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+        
+        .header-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            background: var(--bg-tertiary);
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        
+        .header-badge .dot { width: 6px; height: 6px; background: var(--success); border-radius: 50%; }
+        
+        .chat-container { flex: 1; overflow-y: auto; padding: 28px; }
+        .chat-content { max-width: 800px; margin: 0 auto; }
+        
+        .message { margin-bottom: 20px; display: flex; gap: 14px; }
+        .message.user { flex-direction: row-reverse; }
+        
+        .message-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        
+        .message.assistant .message-avatar {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .message.user .message-avatar { background: var(--bg-tertiary); }
+        
+        .message-content {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 14px 18px;
+            line-height: 1.65;
+            font-size: 14px;
+            color: var(--text);
+            box-shadow: var(--shadow-sm);
+            max-width: 85%;
+        }
+        
+        .message.user .message-content {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+        
+        .message-content p { margin-bottom: 10px; }
+        .message-content p:last-child { margin-bottom: 0; }
+        .message-content ul, .message-content ol { margin: 10px 0; padding-left: 18px; }
+        .message-content li { margin-bottom: 5px; }
+        .message-content strong { color: var(--primary-dark); font-weight: 600; }
+        .message.user .message-content strong { color: white; }
+        
+        .typing { display: flex; gap: 5px; padding: 4px 0; }
+        .typing span {
+            width: 7px;
+            height: 7px;
+            background: var(--border-dark);
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out;
+        }
+        .typing span:nth-child(1) { animation-delay: 0s; }
+        .typing span:nth-child(2) { animation-delay: 0.2s; }
+        .typing span:nth-child(3) { animation-delay: 0.4s; }
+        
+        @keyframes bounce {
+            0%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-6px); }
+        }
+        
+        .input-area {
+            padding: 20px 28px 24px;
+            background: var(--bg);
+            border-top: 1px solid var(--border);
+        }
+        
+        .input-wrapper { max-width: 800px; margin: 0 auto; }
+        
+        .input-box {
+            display: flex;
+            gap: 10px;
+            background: var(--bg);
+            border: 2px solid var(--border);
+            border-radius: 14px;
+            padding: 6px 6px 6px 18px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        
+        .input-box:focus-within {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-light);
+        }
+        
+        .input-box input {
+            flex: 1;
+            border: none;
+            background: transparent;
+            font-size: 14px;
+            color: var(--text);
+            outline: none;
+            font-family: inherit;
+        }
+        
+        .input-box input::placeholder { color: var(--text-muted); }
+        
+        .send-btn {
+            padding: 10px 20px;
+            background: var(--primary);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.15s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .send-btn:hover { background: var(--primary-dark); }
+        .send-btn:disabled { background: var(--border-dark); cursor: not-allowed; }
+        .send-btn svg { width: 16px; height: 16px; }
+        
+        .suggestions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+        
+        .chip {
+            padding: 7px 14px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.15s;
+            font-weight: 500;
+        }
+        
+        .chip:hover {
+            background: var(--primary-light);
+            border-color: var(--primary);
+            color: var(--primary-dark);
+        }
+        
+        .welcome {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        .welcome-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .welcome h2 { font-size: 26px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+        .welcome p { color: var(--text-muted); font-size: 15px; line-height: 1.6; margin-bottom: 32px; max-width: 450px; }
+        
+        .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; max-width: 500px; width: 100%; }
+        
+        .feature-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 18px;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .feature-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+        
+        .feature-card .icon { font-size: 22px; margin-bottom: 10px; }
+        .feature-card h4 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+        .feature-card p { font-size: 12px; color: var(--text-muted); margin: 0; line-height: 1.4; }
+        
+        .powered-by { margin-top: 32px; font-size: 12px; color: var(--text-muted); }
+        .powered-by span { color: var(--text-secondary); font-weight: 500; }
+        
+        @media (max-width: 900px) {
+            .app { grid-template-columns: 1fr; }
+            .sidebar { display: none; }
+            .header-left p { display: none; }
+        }
+        
+        @media (max-width: 500px) {
+            .feature-grid { grid-template-columns: 1fr; }
+            .chat-container, .input-area { padding: 16px; }
+        }
+        
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: var(--border-dark); border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="logo-section">
+                <div class="logo-icon">⚽</div>
+                <div class="logo-text">
+                    <h1>ClubGPT</h1>
+                    <span>Brisbane Roar FC</span>
+                </div>
+            </div>
+            
+            <div class="season-card">
+                <h3>2025-26 Season</h3>
+                <div class="record-display">
+                    <div class="record-item"><div class="value">6</div><div class="label">Wins</div></div>
+                    <div class="record-item"><div class="value">4</div><div class="label">Draws</div></div>
+                    <div class="record-item"><div class="value">4</div><div class="label">Losses</div></div>
+                </div>
+                <div class="season-stats-grid">
+                    <div class="mini-stat"><div class="value">1.26</div><div class="label">Avg xG</div></div>
+                    <div class="mini-stat"><div class="value">49%</div><div class="label">Possession</div></div>
+                </div>
+            </div>
+            
+            <div class="nav-section">
+                <h3>Quick Analysis</h3>
+                <button class="nav-btn" onclick="askQuestion('Give me a complete season performance analysis')"><span class="icon">📊</span>Season Overview</button>
+                <button class="nav-btn" onclick="askQuestion('Compare our home vs away performance')"><span class="icon">🏟️</span>Home vs Away</button>
+                <button class="nav-btn" onclick="askQuestion('Analyze our tactical strengths and weaknesses')"><span class="icon">♟️</span>Tactical Report</button>
+                <button class="nav-btn" onclick="askQuestion('Which matches showed our best pressing?')"><span class="icon">⚡</span>Pressing Analysis</button>
+                <button class="nav-btn" onclick="askQuestion('Analyze our xG vs actual goals')"><span class="icon">🎯</span>xG Analysis</button>
+            </div>
+            
+            <div class="data-status">
+                <h3>Data Sources</h3>
+                <div class="status-item"><span class="status-dot"></span>Impect Match Data</div>
+                <div class="status-item"><span class="status-dot pending"></span>Player Statistics</div>
+                <div class="status-item"><span class="status-dot pending"></span>Contract Data</div>
+            </div>
+            
+            <div class="api-section">
+                <h3>API Connection</h3>
+                <input type="password" class="api-input" id="apiKeyInput" placeholder="sk-ant-api03-..." oninput="saveApiKey()">
+                <div class="api-status" id="apiStatus"></div>
+            </div>
+        </aside>
+        
+        <main class="main">
+            <header class="header">
+                <div class="header-left">
+                    <h2>AI Football Intelligence</h2>
+                    <p>Ask questions about performance, tactics, and trends</p>
+                </div>
+                <div class="header-badge"><span class="dot"></span>14 matches loaded</div>
+            </header>
+            
+            <div class="chat-container" id="chatContainer">
+                <div class="chat-content" id="chatContent">
+                    <div class="welcome" id="welcomeState">
+                        <div class="welcome-icon">🏟️</div>
+                        <h2>Welcome to ClubGPT</h2>
+                        <p>Your AI assistant for football intelligence. Ask anything about Brisbane Roar's performance, tactics, and season trends.</p>
+                        
+                        <div class="feature-grid">
+                            <div class="feature-card" onclick="askQuestion('What was our highest xG match this season?')">
+                                <div class="icon">⚡</div><h4>Best Attacking Match</h4><p>Find peak xG performance</p>
+                            </div>
+                            <div class="feature-card" onclick="askQuestion('How does our pressing intensity affect results?')">
+                                <div class="icon">📈</div><h4>Pressing Impact</h4><p>Analyze defensive patterns</p>
+                            </div>
+                            <div class="feature-card" onclick="askQuestion('Which style of play correlates with wins?')">
+                                <div class="icon">🎯</div><h4>Winning Formula</h4><p>Style vs results analysis</p>
+                            </div>
+                            <div class="feature-card" onclick="askQuestion('What are our main weaknesses?')">
+                                <div class="icon">🔍</div><h4>Areas to Improve</h4><p>Identify key issues</p>
+                            </div>
+                        </div>
+                        <div class="powered-by">Powered by <span>Claude AI</span> + <span>Impect Data</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <div class="input-box">
+                        <input type="text" id="questionInput" placeholder="Ask about performance, tactics, trends..." onkeypress="if(event.key==='Enter')sendQuestion()">
+                        <button class="send-btn" id="sendBtn" onclick="sendQuestion()">
+                            Send
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                    <div class="suggestions">
+                        <span class="chip" onclick="askQuestion('How does possession affect our results?')">Possession impact</span>
+                        <span class="chip" onclick="askQuestion('Ball progression analysis')">Ball progression</span>
+                        <span class="chip" onclick="askQuestion('Shot conversion rate')">Shot conversion</span>
+                        <span class="chip" onclick="askQuestion('Counter attack effectiveness')">Counter attacks</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+<script>
+// Match Data (embedded)
+const MATCH_DATA = {
+    team: "Brisbane Roar",
+    season: "2025-26",
+    summary: { record: { wins: 6, draws: 4, losses: 4 }, goals_for: 17, goals_against: 16, avg_xg: 1.26 },
+    matches: [
+        { matchday: 1, opponent: "Wellington Phoenix", venue: "home", date: "2026-01-03", result: "L 0-3", goals_for: 0, goals_against: 3, xg: 2.29, possession: 0.613, shots: 22, shots_on_target: 6, ball_progression: 237, pressing_height: 65.8, style: { possession: 0.51, counter: 0.24, heavy_metal: 0.42 } },
+        { matchday: 1, opponent: "Wellington Phoenix", venue: "away", date: "2026-01-03", result: "W 3-0", goals_for: 3, goals_against: 0, xg: 1.29, possession: 0.387, shots: 10, shots_on_target: 5, ball_progression: 223, pressing_height: 49.0, style: { possession: 0.39, counter: 0.67, heavy_metal: 0.52 } },
+        { matchday: 3, opponent: "Melbourne City FC", venue: "away", date: "2026-01-06", result: "L 0-1", goals_for: 0, goals_against: 1, xg: 0.45, possession: 0.351, shots: 10, shots_on_target: 1, ball_progression: 217, pressing_height: 57.9, style: { possession: 0.12, counter: 0.41, heavy_metal: 0.26 } },
+        { matchday: 3, opponent: "Melbourne City FC", venue: "home", date: "2026-01-06", result: "W 1-0", goals_for: 1, goals_against: 0, xg: 1.57, possession: 0.649, shots: 14, shots_on_target: 3, ball_progression: 442, pressing_height: 68.5, style: { possession: 0.89, counter: 0.60, heavy_metal: 0.55 } },
+        { matchday: 4, opponent: "Perth Glory", venue: "away", date: "2026-01-16", result: "W 2-1", goals_for: 2, goals_against: 1, xg: 1.78, possession: 0.467, shots: 20, shots_on_target: 7, ball_progression: 423, pressing_height: 62.3, style: { possession: 0.58, counter: 0.51, heavy_metal: 0.50 } },
+        { matchday: 4, opponent: "Perth Glory", venue: "home", date: "2026-01-16", result: "L 1-2", goals_for: 1, goals_against: 2, xg: 1.20, possession: 0.533, shots: 9, shots_on_target: 5, ball_progression: 343, pressing_height: 52.6, style: { possession: 0.55, counter: 0.49, heavy_metal: 0.42 } },
+        { matchday: 5, opponent: "Wellington Phoenix", venue: "away", date: "2025-10-26", result: "L 1-2", goals_for: 1, goals_against: 2, xg: 0.86, possession: 0.385, shots: 6, shots_on_target: 1, ball_progression: 241, pressing_height: 62.3, style: { possession: 0.20, counter: 0.59, heavy_metal: 0.38 } },
+        { matchday: 5, opponent: "Wellington Phoenix", venue: "home", date: "2025-10-26", result: "W 2-1", goals_for: 2, goals_against: 1, xg: 1.68, possession: 0.615, shots: 13, shots_on_target: 5, ball_progression: 346, pressing_height: 64.8, style: { possession: 0.53, counter: 0.46, heavy_metal: 0.60 } },
+        { matchday: 6, opponent: "Western Sydney Wanderers", venue: "away", date: "2025-12-13", result: "D 0-0", goals_for: 0, goals_against: 0, xg: 0.40, possession: 0.452, shots: 7, shots_on_target: 1, ball_progression: 266, pressing_height: 50.3, style: { possession: 0.37, counter: 0.59, heavy_metal: 0.27 } },
+        { matchday: 6, opponent: "Western Sydney Wanderers", venue: "home", date: "2025-12-13", result: "D 0-0", goals_for: 0, goals_against: 0, xg: 1.14, possession: 0.548, shots: 12, shots_on_target: 3, ball_progression: 320, pressing_height: 70.2, style: { possession: 0.69, counter: 0.37, heavy_metal: 0.40 } },
+        { matchday: 7, opponent: "Adelaide United", venue: "home", date: "2026-01-24", result: "L 2-3", goals_for: 2, goals_against: 3, xg: 1.96, possession: 0.448, shots: 26, shots_on_target: 10, ball_progression: 378, pressing_height: 69.7, style: { possession: 0.41, counter: 0.67, heavy_metal: 0.67 } },
+        { matchday: 7, opponent: "Adelaide United", venue: "away", date: "2026-01-24", result: "W 3-2", goals_for: 3, goals_against: 2, xg: 1.19, possession: 0.552, shots: 8, shots_on_target: 4, ball_progression: 327, pressing_height: 67.9, style: { possession: 0.46, counter: 0.48, heavy_metal: 0.62 } },
+        { matchday: 8, opponent: "Auckland FC", venue: "away", date: "2025-11-23", result: "D 1-1", goals_for: 1, goals_against: 1, xg: 1.77, possession: 0.55, shots: 17, shots_on_target: 6, ball_progression: 255, pressing_height: 61.2, style: { possession: 0.68, counter: 0.39, heavy_metal: 0.48 } },
+        { matchday: 8, opponent: "Auckland FC", venue: "home", date: "2025-11-23", result: "D 1-1", goals_for: 1, goals_against: 1, xg: 1.04, possession: 0.45, shots: 10, shots_on_target: 4, ball_progression: 235, pressing_height: 58.0, style: { possession: 0.41, counter: 0.32, heavy_metal: 0.38 } }
+    ]
+};
+
+function buildContext() {
+    let ctx = `# Brisbane Roar - 2025-26 Season\n\n`;
+    ctx += `## Summary\nRecord: ${MATCH_DATA.summary.record.wins}W-${MATCH_DATA.summary.record.draws}D-${MATCH_DATA.summary.record.losses}L\n`;
+    ctx += `Goals: ${MATCH_DATA.summary.goals_for} for, ${MATCH_DATA.summary.goals_against} against\nAvg xG: ${MATCH_DATA.summary.avg_xg}\n\n## Matches\n\n`;
+    
+    MATCH_DATA.matches.forEach(m => {
+        ctx += `### MD${m.matchday}: ${m.result} vs ${m.opponent} (${m.venue}) - ${m.date}\n`;
+        ctx += `xG: ${m.xg} | Possession: ${(m.possession*100).toFixed(0)}% | Shots: ${m.shots} (${m.shots_on_target} on target)\n`;
+        ctx += `Ball Progression: ${m.ball_progression} | Pressing Height: ${m.pressing_height}m\n`;
+        ctx += `Style: Possession ${(m.style.possession*100).toFixed(0)}%, Counter ${(m.style.counter*100).toFixed(0)}%, Heavy Metal ${(m.style.heavy_metal*100).toFixed(0)}%\n\n`;
+    });
+    
+    return ctx;
+}
+
+// API & Chat
+let apiKey = localStorage.getItem('clubgpt_api_key') || '';
+const chatContent = document.getElementById('chatContent');
+const chatContainer = document.getElementById('chatContainer');
+const questionInput = document.getElementById('questionInput');
+const sendBtn = document.getElementById('sendBtn');
+const welcomeState = document.getElementById('welcomeState');
+const apiKeyInput = document.getElementById('apiKeyInput');
+const apiStatus = document.getElementById('apiStatus');
+
+let conversationStarted = false;
+
+function init() {
+    apiKeyInput.value = apiKey;
+    updateApiStatus();
+}
+
+function saveApiKey() {
+    apiKey = apiKeyInput.value.trim();
+    localStorage.setItem('clubgpt_api_key', apiKey);
+    updateApiStatus();
+}
+
+function updateApiStatus() {
+    if (apiKey && apiKey.startsWith('sk-ant-')) {
+        apiStatus.innerHTML = '<span class="status-dot"></span> Connected';
+        apiStatus.className = 'api-status connected';
+    } else {
+        apiStatus.innerHTML = '<span class="status-dot pending"></span> Enter API key';
+        apiStatus.className = 'api-status missing';
+    }
+}
+
+function hideWelcome() {
+    if (!conversationStarted) {
+        welcomeState.style.display = 'none';
+        conversationStarted = true;
+    }
+}
+
+function addMessage(content, isUser) {
+    hideWelcome();
+    const div = document.createElement('div');
+    div.className = `message ${isUser ? 'user' : 'assistant'}`;
+    div.innerHTML = `
+        <div class="message-avatar">${isUser ? '👤' : '⚽'}</div>
+        <div class="message-content">${formatMessage(content)}</div>
+    `;
+    chatContent.appendChild(div);
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+}
+
+function formatMessage(text) {
+    return text
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\n\n/g, '</p><p>')
+        .replace(/\n- /g, '<br>• ')
+        .replace(/\n/g, '<br>')
+        .replace(/^/, '<p>')
+        .replace(/$/, '</p>');
+}
+
+function showTyping() {
+    hideWelcome();
+    const div = document.createElement('div');
+    div.className = 'message assistant';
+    div.id = 'typingIndicator';
+    div.innerHTML = `<div class="message-avatar">⚽</div><div class="message-content"><div class="typing"><span></span><span></span><span></span></div></div>`;
+    chatContent.appendChild(div);
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+}
+
+function hideTyping() {
+    const el = document.getElementById('typingIndicator');
+    if (el) el.remove();
+}
+
+function askQuestion(q) {
+    questionInput.value = q;
+    sendQuestion();
+}
+
+async function sendQuestion() {
+    const question = questionInput.value.trim();
+    if (!question) return;
+    
+    if (!apiKey || !apiKey.startsWith('sk-ant-')) {
+        addMessage('Please enter your Anthropic API key in the sidebar first.', false);
+        return;
+    }
+    
+    addMessage(question, true);
+    questionInput.value = '';
+    sendBtn.disabled = true;
+    showTyping();
+    
+    try {
+        const response = await fetch('https://api.anthropic.com/v1/messages', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'x-api-key': apiKey,
+                'anthropic-version': '2023-06-01',
+                'anthropic-dangerous-direct-browser-access': 'true'
+            },
+            body: JSON.stringify({
+                model: 'claude-sonnet-4-20250514',
+                max_tokens: 1024,
+                system: `You are ClubGPT, an AI assistant for Brisbane Roar Football Club. You have detailed match data from the 2025-26 season. Answer questions about team performance, tactics, and trends. Be concise, reference specific matches and numbers, and identify patterns. Use the data provided to give data-driven insights.`,
+                messages: [{
+                    role: 'user',
+                    content: `Here is the team's match data:\n\n${buildContext()}\n\nQuestion: ${question}`
+                }]
+            })
+        });
+        
+        hideTyping();
+        
+        if (!response.ok) {
+            const err = await response.json();
+            addMessage(`Error: ${err.error?.message || 'API request failed'}`, false);
+            return;
+        }
+        
+        const data = await response.json();
+        addMessage(data.content[0].text, false);
+        
+    } catch (error) {
+        hideTyping();
+        addMessage(`Error: ${error.message}. Make sure your API key is correct.`, false);
+    }
+    
+    sendBtn.disabled = false;
+    questionInput.focus();
+}
+
+init();
+</script>
+</body>
+</html>
