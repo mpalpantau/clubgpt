@@ -160,6 +160,7 @@ class ClubGPTHandler(SimpleHTTPRequestHandler):
     """Handle HTTP requests for ClubGPT."""
 
     def do_GET(self):
+        global MATCH_DATA
         if self.path == '/' or self.path == '/index.html':
             # Serve the UI
             self.send_response(200)
@@ -204,7 +205,6 @@ class ClubGPTHandler(SimpleHTTPRequestHandler):
                 else:
                     sync(username, password)
                     # Reload data
-                    global MATCH_DATA
                     with open(DATA_PATH, 'r') as f:
                         MATCH_DATA = json.load(f)
                     response = json.dumps({'status': 'synced', 'matches': MATCH_DATA['summary']['total_matches']})
