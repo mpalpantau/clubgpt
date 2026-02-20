@@ -1,45 +1,39 @@
 {
   "team": "Brisbane Roar",
+  "team_id": 6375,
   "season": "2025-26",
-  "competition": "A-League Women",
-  "data_source": "Impect",
+  "competition": "A-League Men",
+  "competition_iteration_id": 1608,
+  "data_source": "Impect Analysis API",
+  "last_sync": "2026-02-20T02:46:10.715357+00:00",
   "matches": [
     {
+      "match_id": 234078,
       "matchday": 1,
-      "opponent": "Wellington Phoenix",
-      "venue": "home",
       "date": "2026-01-03",
+      "venue": "home",
       "result": "L 0-3",
       "goals_for": 0,
       "goals_against": 3,
+      "opponent": "Wellington Phoenix",
+      "opponent_squad_id": 6378,
       "metrics": {
-        "style": {
-          "possession_control": 0.51,
-          "heavy_metal": 0.42,
-          "underdog_pressing": 0.45,
-          "direct_aerial": 0.54,
-          "safety_first": 0.32,
-          "counter_attacking": 0.24
-        },
         "expected_goals": {
-          "packing_xg": 2.05,
-          "shot_based_xg": 2.29,
-          "post_shot_xg": 2.61
+          "packing_xg": 2.29,
+          "shot_based_xg": 2.05,
+          "post_shot_xg": 2.61,
+          "developed_goal_threat": 3.06
         },
         "buildup": {
-          "ball_progression": 237,
-          "defensive_ball_control": 151,
-          "critical_ball_loss": 8
+          "ball_progression": 237.2,
+          "breaking_opponent_defence": 39.5,
+          "defensive_ball_control": 150.9,
+          "critical_ball_loss": 8,
+          "offensive_interventions": 106.6
         },
         "opponent": {
-          "opponent_ball_progression": 223,
-          "offensive_interventions": 107,
-          "own_defence_broken": 42
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 40,
-          "offensive_efficiency": 0,
-          "defensive_interventions": 236
+          "opponent_ball_progression": 222.6,
+          "opponent_breaking_defence": 42.1
         },
         "possession": {
           "ball_possession_rate": 0.613,
@@ -61,107 +55,82 @@
           "avg_pressure_height_m": 65.8,
           "avg_pressure_buildup": 21.25,
           "forced_high_passes_pct": 0.18,
-          "avg_pressure_counter_press": 35.69
+          "avg_pressure_counter_press": 30.0
+        },
+        "ratios": {
+          "reverse_play": 0.265,
+          "add_opponents": 0.624,
+          "remove_opponents": 0.479,
+          "offensive_per_removed_teammates": 1.571
         }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 8.0,
+        "OFFENSIVE_PLAY": 237.1613,
+        "OFFENSIVE_PLAY:opponent": 222.6382,
+        "OFFENSIVE_PLAY_DZ": 39.5375,
+        "OFFENSIVE_PLAY_DZ:opponent": 42.08,
+        "PACKING_NSXG": 2.049709,
+        "PACKING_XG": 2.2886527,
+        "POSTSHOT_XG": 2.6133063,
+        "REMOVE_OPPONENTS": 106.615,
+        "REMOVE_OPPONENTS_DZ": 11.203,
+        "REMOVE_TEAMMATES": 150.92769,
+        "SECOND_BALL_WIN": 30.0,
+        "SECOND_BALL_WIN:opponent": 23.0,
+        "SHOT_AT_GOAL_NUMBER": 22.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 6.0,
+        "WON_AERIAL_DUELS": 16.0,
+        "WON_GROUND_DUELS": 25.0,
+        "addOpponentsRatio": 0.62389064,
+        "addTeammatesDefendersRatio": 0.48817104,
+        "addTeammatesRatio": 0.6326086,
+        "aerialDuelsRatio": 0.516129,
+        "ballPossessionRatio": 0.6134361,
+        "duelsRatio": 0.43617022,
+        "forcedHighPassesPercent": 0.1764706,
+        "groundDuelsRatio": 0.3968254,
+        "meanPressureBtl": 30.0,
+        "meanPressureHeight": 65.79568,
+        "meanPressureOppDef": 21.25,
+        "offensivePlayPerRemovedTeammates": 1.5713571,
+        "oppGkUnderPressurePercent": 0.16666667,
+        "passRatio": 0.84408605,
+        "pxtPosSum": 3.0623083,
+        "removeOpponentsRatio": 0.4788711,
+        "reversePlayRatio": 0.2646104,
+        "secondBallWinsPercent": 0.5660377,
+        "successfulPassesClean": 314.0,
+        "unsuccessfulPassesClean": 58.0
       }
     },
     {
-      "matchday": 1,
-      "opponent": "Wellington Phoenix",
-      "venue": "away",
-      "date": "2026-01-03",
-      "result": "W 3-0",
-      "goals_for": 3,
-      "goals_against": 0,
-      "metrics": {
-        "style": {
-          "possession_control": 0.39,
-          "heavy_metal": 0.52,
-          "underdog_pressing": 0.39,
-          "direct_aerial": 0.74,
-          "safety_first": 0.59,
-          "counter_attacking": 0.67
-        },
-        "expected_goals": {
-          "packing_xg": 1.44,
-          "shot_based_xg": 1.29,
-          "post_shot_xg": 1.46
-        },
-        "buildup": {
-          "ball_progression": 223,
-          "defensive_ball_control": 64,
-          "critical_ball_loss": 1
-        },
-        "opponent": {
-          "opponent_ball_progression": 237,
-          "offensive_interventions": 227,
-          "own_defence_broken": 40
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 42,
-          "offensive_efficiency": 14,
-          "defensive_interventions": 165
-        },
-        "possession": {
-          "ball_possession_rate": 0.387,
-          "passing_accuracy": 0.692,
-          "successful_passes": 119,
-          "unsuccessful_passes": 53
-        },
-        "duels": {
-          "duel_rate": 0.564,
-          "ground_duel_success": 0.603,
-          "aerial_duel_success": 0.484
-        },
-        "shots": {
-          "total_shots": 10,
-          "shots_on_target": 5
-        },
-        "pressing": {
-          "pressuring_gk_pct": 0.22,
-          "avg_pressure_height_m": 49.0,
-          "avg_pressure_buildup": 15.02,
-          "forced_high_passes_pct": 0.12,
-          "avg_pressure_counter_press": 26.04
-        }
-      }
-    },
-    {
+      "match_id": 234086,
       "matchday": 3,
-      "opponent": "Melbourne City FC",
-      "venue": "away",
       "date": "2026-01-06",
-      "result": "L 0-1",
-      "goals_for": 0,
-      "goals_against": 1,
+      "venue": "away",
+      "result": "W 1-0",
+      "goals_for": 1,
+      "goals_against": 0,
+      "opponent": "Melbourne City FC",
+      "opponent_squad_id": 3448,
       "metrics": {
-        "style": {
-          "possession_control": 0.12,
-          "heavy_metal": 0.26,
-          "underdog_pressing": 0.32,
-          "direct_aerial": 0.43,
-          "safety_first": 0.58,
-          "counter_attacking": 0.41
-        },
         "expected_goals": {
-          "packing_xg": 0.23,
-          "shot_based_xg": 0.45,
-          "post_shot_xg": 0.22
+          "packing_xg": 0.45,
+          "shot_based_xg": 0.23,
+          "post_shot_xg": 0.22,
+          "developed_goal_threat": 0.91
         },
         "buildup": {
-          "ball_progression": 217,
-          "defensive_ball_control": 136,
-          "critical_ball_loss": 9
+          "ball_progression": 216.8,
+          "breaking_opponent_defence": 33.6,
+          "defensive_ball_control": 135.9,
+          "critical_ball_loss": 9,
+          "offensive_interventions": 155.2
         },
         "opponent": {
-          "opponent_ball_progression": 442,
-          "offensive_interventions": 155,
-          "own_defence_broken": 68
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 34,
-          "offensive_efficiency": 0,
-          "defensive_interventions": 309
+          "opponent_ball_progression": 441.8,
+          "opponent_breaking_defence": 68.2
         },
         "possession": {
           "ball_possession_rate": 0.351,
@@ -183,107 +152,82 @@
           "avg_pressure_height_m": 57.9,
           "avg_pressure_buildup": 12.97,
           "forced_high_passes_pct": 0.07,
-          "avg_pressure_counter_press": 29.44
+          "avg_pressure_counter_press": 19.96
+        },
+        "ratios": {
+          "reverse_play": 0.231,
+          "add_opponents": 0.573,
+          "remove_opponents": 0.351,
+          "offensive_per_removed_teammates": 1.595
         }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 9.0,
+        "OFFENSIVE_PLAY": 216.7782,
+        "OFFENSIVE_PLAY:opponent": 441.7965,
+        "OFFENSIVE_PLAY_DZ": 33.599,
+        "OFFENSIVE_PLAY_DZ:opponent": 68.237495,
+        "PACKING_NSXG": 0.23410915,
+        "PACKING_XG": 0.446044,
+        "POSTSHOT_XG": 0.22133292,
+        "REMOVE_OPPONENTS": 155.154,
+        "REMOVE_OPPONENTS_DZ": 7.503,
+        "REMOVE_TEAMMATES": 135.924,
+        "SECOND_BALL_WIN": 20.0,
+        "SECOND_BALL_WIN:opponent": 25.0,
+        "SHOT_AT_GOAL_NUMBER": 10.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 1.0,
+        "WON_AERIAL_DUELS": 18.0,
+        "WON_GROUND_DUELS": 36.0,
+        "addOpponentsRatio": 0.57305855,
+        "addTeammatesDefendersRatio": 0.61339396,
+        "addTeammatesRatio": 0.53539735,
+        "aerialDuelsRatio": 0.64285713,
+        "ballPossessionRatio": 0.35110295,
+        "duelsRatio": 0.54,
+        "forcedHighPassesPercent": 0.06666667,
+        "groundDuelsRatio": 0.5,
+        "meanPressureBtl": 19.960318,
+        "meanPressureHeight": 57.86677,
+        "meanPressureOppDef": 12.972028,
+        "offensivePlayPerRemovedTeammates": 1.5948486,
+        "oppGkUnderPressurePercent": 0.1904762,
+        "passRatio": 0.7562189,
+        "pxtPosSum": 0.90576035,
+        "removeOpponentsRatio": 0.35118884,
+        "reversePlayRatio": 0.23093727,
+        "secondBallWinsPercent": 0.44444445,
+        "successfulPassesClean": 152.0,
+        "unsuccessfulPassesClean": 49.0
       }
     },
     {
-      "matchday": 3,
-      "opponent": "Melbourne City FC",
-      "venue": "home",
-      "date": "2026-01-06",
-      "result": "W 1-0",
-      "goals_for": 1,
-      "goals_against": 0,
-      "metrics": {
-        "style": {
-          "possession_control": 0.89,
-          "heavy_metal": 0.55,
-          "underdog_pressing": 0.63,
-          "direct_aerial": 0.53,
-          "safety_first": 0.41,
-          "counter_attacking": 0.60
-        },
-        "expected_goals": {
-          "packing_xg": 2.17,
-          "shot_based_xg": 1.57,
-          "post_shot_xg": 0.96
-        },
-        "buildup": {
-          "ball_progression": 442,
-          "defensive_ball_control": 109,
-          "critical_ball_loss": 10
-        },
-        "opponent": {
-          "opponent_ball_progression": 217,
-          "offensive_interventions": 181,
-          "own_defence_broken": 34
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 68,
-          "offensive_efficiency": 68,
-          "defensive_interventions": 208
-        },
-        "possession": {
-          "ball_possession_rate": 0.649,
-          "passing_accuracy": 0.92,
-          "successful_passes": 472,
-          "unsuccessful_passes": 41
-        },
-        "duels": {
-          "duel_rate": 0.46,
-          "ground_duel_success": 0.5,
-          "aerial_duel_success": 0.357
-        },
-        "shots": {
-          "total_shots": 14,
-          "shots_on_target": 3
-        },
-        "pressing": {
-          "pressuring_gk_pct": 0.29,
-          "avg_pressure_height_m": 68.5,
-          "avg_pressure_buildup": 15.59,
-          "forced_high_passes_pct": 0.30,
-          "avg_pressure_counter_press": 31.85
-        }
-      }
-    },
-    {
+      "match_id": 234093,
       "matchday": 4,
-      "opponent": "Perth Glory",
-      "venue": "away",
       "date": "2026-01-16",
-      "result": "W 2-1",
-      "goals_for": 2,
-      "goals_against": 1,
+      "venue": "away",
+      "result": "L 1-2",
+      "goals_for": 1,
+      "goals_against": 2,
+      "opponent": "Perth Glory",
+      "opponent_squad_id": 2088,
       "metrics": {
-        "style": {
-          "possession_control": 0.58,
-          "heavy_metal": 0.50,
-          "underdog_pressing": 0.39,
-          "direct_aerial": 0.67,
-          "safety_first": 0.63,
-          "counter_attacking": 0.51
-        },
         "expected_goals": {
-          "packing_xg": 0.70,
-          "shot_based_xg": 1.78,
-          "post_shot_xg": 2.12
+          "packing_xg": 1.78,
+          "shot_based_xg": 0.7,
+          "post_shot_xg": 2.12,
+          "developed_goal_threat": 1.53
         },
         "buildup": {
-          "ball_progression": 423,
-          "defensive_ball_control": 101,
-          "critical_ball_loss": 12
+          "ball_progression": 423.2,
+          "breaking_opponent_defence": 54.6,
+          "defensive_ball_control": 101.2,
+          "critical_ball_loss": 12,
+          "offensive_interventions": 139.3
         },
         "opponent": {
-          "opponent_ball_progression": 343,
-          "offensive_interventions": 139,
-          "own_defence_broken": 47
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 55,
-          "offensive_efficiency": 27,
-          "defensive_interventions": 258
+          "opponent_ball_progression": 343.2,
+          "opponent_breaking_defence": 46.9
         },
         "possession": {
           "ball_possession_rate": 0.467,
@@ -301,111 +245,86 @@
           "shots_on_target": 7
         },
         "pressing": {
-          "pressuring_gk_pct": 0.40,
+          "pressuring_gk_pct": 0.4,
           "avg_pressure_height_m": 62.3,
           "avg_pressure_buildup": 9.58,
           "forced_high_passes_pct": 0.14,
-          "avg_pressure_counter_press": 27.66
+          "avg_pressure_counter_press": 14.27
+        },
+        "ratios": {
+          "reverse_play": 0.373,
+          "add_opponents": 0.552,
+          "remove_opponents": 0.406,
+          "offensive_per_removed_teammates": 4.183
         }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 12.0,
+        "OFFENSIVE_PLAY": 423.228,
+        "OFFENSIVE_PLAY:opponent": 343.1735,
+        "OFFENSIVE_PLAY_DZ": 54.551,
+        "OFFENSIVE_PLAY_DZ:opponent": 46.8988,
+        "PACKING_NSXG": 0.6993773,
+        "PACKING_XG": 1.7846379,
+        "POSTSHOT_XG": 2.1152713,
+        "REMOVE_OPPONENTS": 139.332,
+        "REMOVE_OPPONENTS_DZ": 5.903,
+        "REMOVE_TEAMMATES": 101.16619,
+        "SECOND_BALL_WIN": 25.0,
+        "SECOND_BALL_WIN:opponent": 32.0,
+        "SHOT_AT_GOAL_NUMBER": 20.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 7.0,
+        "WON_AERIAL_DUELS": 17.0,
+        "WON_GROUND_DUELS": 25.0,
+        "addOpponentsRatio": 0.55208623,
+        "addTeammatesDefendersRatio": 0.5198439,
+        "addTeammatesRatio": 0.5803578,
+        "aerialDuelsRatio": 0.4722222,
+        "ballPossessionRatio": 0.46672663,
+        "duelsRatio": 0.4827586,
+        "forcedHighPassesPercent": 0.14285715,
+        "groundDuelsRatio": 0.49019608,
+        "meanPressureBtl": 14.270833,
+        "meanPressureHeight": 62.338142,
+        "meanPressureOppDef": 9.577465,
+        "offensivePlayPerRemovedTeammates": 4.1834927,
+        "oppGkUnderPressurePercent": 0.4,
+        "passRatio": 0.8498498,
+        "pxtPosSum": 1.5253611,
+        "removeOpponentsRatio": 0.4060104,
+        "reversePlayRatio": 0.37270615,
+        "secondBallWinsPercent": 0.4385965,
+        "successfulPassesClean": 283.0,
+        "unsuccessfulPassesClean": 50.0
       }
     },
     {
-      "matchday": 4,
-      "opponent": "Perth Glory",
-      "venue": "home",
-      "date": "2026-01-16",
-      "result": "L 1-2",
-      "goals_for": 1,
-      "goals_against": 2,
-      "metrics": {
-        "style": {
-          "possession_control": 0.55,
-          "heavy_metal": 0.42,
-          "underdog_pressing": 0.39,
-          "direct_aerial": 0.46,
-          "safety_first": 0.58,
-          "counter_attacking": 0.49
-        },
-        "expected_goals": {
-          "packing_xg": 1.14,
-          "shot_based_xg": 1.20,
-          "post_shot_xg": 1.83
-        },
-        "buildup": {
-          "ball_progression": 343,
-          "defensive_ball_control": 82,
-          "critical_ball_loss": 2
-        },
-        "opponent": {
-          "opponent_ball_progression": 423,
-          "offensive_interventions": 145,
-          "own_defence_broken": 55
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 47,
-          "offensive_efficiency": 47,
-          "defensive_interventions": 276
-        },
-        "possession": {
-          "ball_possession_rate": 0.533,
-          "passing_accuracy": 0.84,
-          "successful_passes": 347,
-          "unsuccessful_passes": 66
-        },
-        "duels": {
-          "duel_rate": 0.517,
-          "ground_duel_success": 0.51,
-          "aerial_duel_success": 0.528
-        },
-        "shots": {
-          "total_shots": 9,
-          "shots_on_target": 5
-        },
-        "pressing": {
-          "pressuring_gk_pct": 0.14,
-          "avg_pressure_height_m": 52.6,
-          "avg_pressure_buildup": 9.49,
-          "forced_high_passes_pct": 0.03,
-          "avg_pressure_counter_press": 26.72
-        }
-      }
-    },
-    {
+      "match_id": 234102,
       "matchday": 5,
-      "opponent": "Wellington Phoenix",
-      "venue": "away",
       "date": "2025-10-26",
-      "result": "L 1-2",
-      "goals_for": 1,
-      "goals_against": 2,
+      "venue": "away",
+      "result": "W 2-1",
+      "goals_for": 2,
+      "goals_against": 1,
+      "opponent": "Wellington Phoenix",
+      "opponent_squad_id": 6378,
       "metrics": {
-        "style": {
-          "possession_control": 0.20,
-          "heavy_metal": 0.38,
-          "underdog_pressing": 0.42,
-          "direct_aerial": 0.63,
-          "safety_first": 0.68,
-          "counter_attacking": 0.59
-        },
         "expected_goals": {
-          "packing_xg": 0.98,
-          "shot_based_xg": 0.86,
-          "post_shot_xg": 0.22
+          "packing_xg": 0.86,
+          "shot_based_xg": 0.98,
+          "post_shot_xg": 0.22,
+          "developed_goal_threat": 1.0
         },
         "buildup": {
-          "ball_progression": 241,
-          "defensive_ball_control": 128,
-          "critical_ball_loss": 8
+          "ball_progression": 240.9,
+          "breaking_opponent_defence": 38.0,
+          "defensive_ball_control": 128.4,
+          "critical_ball_loss": 8,
+          "offensive_interventions": 196.0
         },
         "opponent": {
-          "opponent_ball_progression": 346,
-          "offensive_interventions": 196,
-          "own_defence_broken": 49
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 38,
-          "offensive_efficiency": 38,
-          "defensive_interventions": 271
+          "opponent_ball_progression": 346.2,
+          "opponent_breaking_defence": 48.8
         },
         "possession": {
           "ball_possession_rate": 0.385,
@@ -427,107 +346,82 @@
           "avg_pressure_height_m": 62.3,
           "avg_pressure_buildup": 13.88,
           "forced_high_passes_pct": 0.16,
-          "avg_pressure_counter_press": 33.44
+          "avg_pressure_counter_press": 29.09
+        },
+        "ratios": {
+          "reverse_play": 0.258,
+          "add_opponents": 0.687,
+          "remove_opponents": 0.566,
+          "offensive_per_removed_teammates": 1.876
         }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 8.0,
+        "OFFENSIVE_PLAY": 240.86,
+        "OFFENSIVE_PLAY:opponent": 346.1687,
+        "OFFENSIVE_PLAY_DZ": 38.01,
+        "OFFENSIVE_PLAY_DZ:opponent": 48.8,
+        "PACKING_NSXG": 0.9752926,
+        "PACKING_XG": 0.8555883,
+        "POSTSHOT_XG": 0.22445181,
+        "REMOVE_OPPONENTS": 195.957,
+        "REMOVE_OPPONENTS_DZ": 7.402,
+        "REMOVE_TEAMMATES": 128.36041,
+        "SECOND_BALL_WIN": 23.0,
+        "SECOND_BALL_WIN:opponent": 30.0,
+        "SHOT_AT_GOAL_NUMBER": 6.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 1.0,
+        "WON_AERIAL_DUELS": 18.0,
+        "WON_GROUND_DUELS": 44.0,
+        "addOpponentsRatio": 0.6870126,
+        "addTeammatesDefendersRatio": 0.53173995,
+        "addTeammatesRatio": 0.5704371,
+        "aerialDuelsRatio": 0.62068963,
+        "ballPossessionRatio": 0.38500506,
+        "duelsRatio": 0.5123967,
+        "forcedHighPassesPercent": 0.16363636,
+        "groundDuelsRatio": 0.47826087,
+        "meanPressureBtl": 29.09091,
+        "meanPressureHeight": 62.33312,
+        "meanPressureOppDef": 13.877551,
+        "offensivePlayPerRemovedTeammates": 1.8764353,
+        "oppGkUnderPressurePercent": 0.071428575,
+        "passRatio": 0.62441313,
+        "pxtPosSum": 1.0034021,
+        "removeOpponentsRatio": 0.5660737,
+        "reversePlayRatio": 0.25786802,
+        "secondBallWinsPercent": 0.43396226,
+        "successfulPassesClean": 133.0,
+        "unsuccessfulPassesClean": 80.0
       }
     },
     {
-      "matchday": 5,
-      "opponent": "Wellington Phoenix",
-      "venue": "home",
-      "date": "2025-10-26",
-      "result": "W 2-1",
-      "goals_for": 2,
-      "goals_against": 1,
-      "metrics": {
-        "style": {
-          "possession_control": 0.53,
-          "heavy_metal": 0.60,
-          "underdog_pressing": 0.65,
-          "direct_aerial": 0.61,
-          "safety_first": 0.45,
-          "counter_attacking": 0.46
-        },
-        "expected_goals": {
-          "packing_xg": 1.53,
-          "shot_based_xg": 1.68,
-          "post_shot_xg": 1.36
-        },
-        "buildup": {
-          "ball_progression": 346,
-          "defensive_ball_control": 146,
-          "critical_ball_loss": 11
-        },
-        "opponent": {
-          "opponent_ball_progression": 241,
-          "offensive_interventions": 201,
-          "own_defence_broken": 38
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 49,
-          "offensive_efficiency": 24,
-          "defensive_interventions": 244
-        },
-        "possession": {
-          "ball_possession_rate": 0.615,
-          "passing_accuracy": 0.837,
-          "successful_passes": 340,
-          "unsuccessful_passes": 66
-        },
-        "duels": {
-          "duel_rate": 0.488,
-          "ground_duel_success": 0.522,
-          "aerial_duel_success": 0.379
-        },
-        "shots": {
-          "total_shots": 13,
-          "shots_on_target": 5
-        },
-        "pressing": {
-          "pressuring_gk_pct": 0.27,
-          "avg_pressure_height_m": 64.8,
-          "avg_pressure_buildup": 18.33,
-          "forced_high_passes_pct": 0.19,
-          "avg_pressure_counter_press": 34.38
-        }
-      }
-    },
-    {
+      "match_id": 234106,
       "matchday": 6,
-      "opponent": "Western Sydney Wanderers",
-      "venue": "away",
       "date": "2025-12-13",
+      "venue": "away",
       "result": "D 0-0",
       "goals_for": 0,
       "goals_against": 0,
+      "opponent": "Western Sydney Wanderers",
+      "opponent_squad_id": 6377,
       "metrics": {
-        "style": {
-          "possession_control": 0.37,
-          "heavy_metal": 0.27,
-          "underdog_pressing": 0.26,
-          "direct_aerial": 0.39,
-          "safety_first": 0.69,
-          "counter_attacking": 0.59
-        },
         "expected_goals": {
-          "packing_xg": 0.31,
-          "shot_based_xg": 0.40,
-          "post_shot_xg": 0.11
+          "packing_xg": 0.4,
+          "shot_based_xg": 0.31,
+          "post_shot_xg": 0.11,
+          "developed_goal_threat": 0.9
         },
         "buildup": {
-          "ball_progression": 266,
-          "defensive_ball_control": 112,
-          "critical_ball_loss": 6
+          "ball_progression": 266.3,
+          "breaking_opponent_defence": 36.0,
+          "defensive_ball_control": 112.2,
+          "critical_ball_loss": 6,
+          "offensive_interventions": 150.5
         },
         "opponent": {
-          "opponent_ball_progression": 320,
-          "offensive_interventions": 151,
-          "own_defence_broken": 39
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 36,
-          "offensive_efficiency": 0,
-          "defensive_interventions": 210
+          "opponent_ball_progression": 320.0,
+          "opponent_breaking_defence": 39.1
         },
         "possession": {
           "ball_possession_rate": 0.452,
@@ -549,107 +443,82 @@
           "avg_pressure_height_m": 50.3,
           "avg_pressure_buildup": 13.76,
           "forced_high_passes_pct": 0.07,
-          "avg_pressure_counter_press": 30.44
+          "avg_pressure_counter_press": 21.7
+        },
+        "ratios": {
+          "reverse_play": 0.347,
+          "add_opponents": 0.465,
+          "remove_opponents": 0.47,
+          "offensive_per_removed_teammates": 2.374
         }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 6.0,
+        "OFFENSIVE_PLAY": 266.3022,
+        "OFFENSIVE_PLAY:opponent": 320.0435,
+        "OFFENSIVE_PLAY_DZ": 36.0,
+        "OFFENSIVE_PLAY_DZ:opponent": 39.12,
+        "PACKING_NSXG": 0.31139895,
+        "PACKING_XG": 0.40037367,
+        "POSTSHOT_XG": 0.111059844,
+        "REMOVE_OPPONENTS": 150.514,
+        "REMOVE_OPPONENTS_DZ": 2.6,
+        "REMOVE_TEAMMATES": 112.163506,
+        "SECOND_BALL_WIN": 27.0,
+        "SECOND_BALL_WIN:opponent": 25.0,
+        "SHOT_AT_GOAL_NUMBER": 7.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 1.0,
+        "WON_AERIAL_DUELS": 16.0,
+        "WON_GROUND_DUELS": 37.0,
+        "addOpponentsRatio": 0.46545556,
+        "addTeammatesDefendersRatio": 0.42994443,
+        "addTeammatesRatio": 0.4855127,
+        "aerialDuelsRatio": 0.5,
+        "ballPossessionRatio": 0.4515504,
+        "duelsRatio": 0.48623854,
+        "forcedHighPassesPercent": 0.07317073,
+        "groundDuelsRatio": 0.48051947,
+        "meanPressureBtl": 21.70068,
+        "meanPressureHeight": 50.34311,
+        "meanPressureOppDef": 13.761905,
+        "offensivePlayPerRemovedTeammates": 2.374232,
+        "oppGkUnderPressurePercent": 0.0,
+        "passRatio": 0.83566433,
+        "pxtPosSum": 0.9023615,
+        "removeOpponentsRatio": 0.47029236,
+        "reversePlayRatio": 0.3466161,
+        "secondBallWinsPercent": 0.5192308,
+        "successfulPassesClean": 239.0,
+        "unsuccessfulPassesClean": 47.0
       }
     },
     {
-      "matchday": 6,
-      "opponent": "Western Sydney Wanderers",
-      "venue": "home",
-      "date": "2025-12-13",
-      "result": "D 0-0",
-      "goals_for": 0,
-      "goals_against": 0,
-      "metrics": {
-        "style": {
-          "possession_control": 0.69,
-          "heavy_metal": 0.40,
-          "underdog_pressing": 0.47,
-          "direct_aerial": 0.40,
-          "safety_first": 0.62,
-          "counter_attacking": 0.37
-        },
-        "expected_goals": {
-          "packing_xg": 1.56,
-          "shot_based_xg": 1.14,
-          "post_shot_xg": 0.41
-        },
-        "buildup": {
-          "ball_progression": 320,
-          "defensive_ball_control": 104,
-          "critical_ball_loss": 6
-        },
-        "opponent": {
-          "opponent_ball_progression": 266,
-          "offensive_interventions": 143,
-          "own_defence_broken": 36
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 39,
-          "offensive_efficiency": 0,
-          "defensive_interventions": 170
-        },
-        "possession": {
-          "ball_possession_rate": 0.548,
-          "passing_accuracy": 0.903,
-          "successful_passes": 346,
-          "unsuccessful_passes": 37
-        },
-        "duels": {
-          "duel_rate": 0.514,
-          "ground_duel_success": 0.519,
-          "aerial_duel_success": 0.5
-        },
-        "shots": {
-          "total_shots": 12,
-          "shots_on_target": 3
-        },
-        "pressing": {
-          "pressuring_gk_pct": 0.29,
-          "avg_pressure_height_m": 70.2,
-          "avg_pressure_buildup": 13.71,
-          "forced_high_passes_pct": 0.19,
-          "avg_pressure_counter_press": 27.71
-        }
-      }
-    },
-    {
+      "match_id": 234112,
       "matchday": 7,
-      "opponent": "Adelaide United",
-      "venue": "home",
       "date": "2026-01-24",
+      "venue": "home",
       "result": "L 2-3",
       "goals_for": 2,
       "goals_against": 3,
+      "opponent": "Adelaide United",
+      "opponent_squad_id": 6372,
       "metrics": {
-        "style": {
-          "possession_control": 0.41,
-          "heavy_metal": 0.67,
-          "underdog_pressing": 0.74,
-          "direct_aerial": 0.69,
-          "safety_first": 0.56,
-          "counter_attacking": 0.67
-        },
         "expected_goals": {
-          "packing_xg": 1.65,
-          "shot_based_xg": 1.96,
-          "post_shot_xg": 2.17
+          "packing_xg": 1.96,
+          "shot_based_xg": 1.65,
+          "post_shot_xg": 2.17,
+          "developed_goal_threat": 2.53
         },
         "buildup": {
-          "ball_progression": 378,
-          "defensive_ball_control": 153,
-          "critical_ball_loss": 9
+          "ball_progression": 377.8,
+          "breaking_opponent_defence": 67.7,
+          "defensive_ball_control": 153.3,
+          "critical_ball_loss": 9,
+          "offensive_interventions": 193.1
         },
         "opponent": {
-          "opponent_ball_progression": 327,
-          "offensive_interventions": 193,
-          "own_defence_broken": 53
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 68,
-          "offensive_efficiency": 34,
-          "defensive_interventions": 274
+          "opponent_ball_progression": 326.9,
+          "opponent_breaking_defence": 53.2
         },
         "possession": {
           "ball_possession_rate": 0.448,
@@ -671,107 +540,82 @@
           "avg_pressure_height_m": 69.7,
           "avg_pressure_buildup": 15.68,
           "forced_high_passes_pct": 0.33,
-          "avg_pressure_counter_press": 29.16
+          "avg_pressure_counter_press": 26.94
+        },
+        "ratios": {
+          "reverse_play": 0.324,
+          "add_opponents": 0.559,
+          "remove_opponents": 0.591,
+          "offensive_per_removed_teammates": 2.464
         }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 9.0,
+        "OFFENSIVE_PLAY": 377.7733,
+        "OFFENSIVE_PLAY:opponent": 326.8929,
+        "OFFENSIVE_PLAY_DZ": 67.6822,
+        "OFFENSIVE_PLAY_DZ:opponent": 53.25,
+        "PACKING_NSXG": 1.6527817,
+        "PACKING_XG": 1.9563178,
+        "POSTSHOT_XG": 2.1704712,
+        "REMOVE_OPPONENTS": 193.131,
+        "REMOVE_OPPONENTS_DZ": 12.106,
+        "REMOVE_TEAMMATES": 153.32869,
+        "SECOND_BALL_WIN": 35.0,
+        "SECOND_BALL_WIN:opponent": 26.0,
+        "SHOT_AT_GOAL_NUMBER": 26.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 10.0,
+        "WON_AERIAL_DUELS": 15.0,
+        "WON_GROUND_DUELS": 34.0,
+        "addOpponentsRatio": 0.5587806,
+        "addTeammatesDefendersRatio": 0.53855956,
+        "addTeammatesRatio": 0.5705845,
+        "aerialDuelsRatio": 0.5555556,
+        "ballPossessionRatio": 0.4476797,
+        "duelsRatio": 0.5568182,
+        "forcedHighPassesPercent": 0.32692307,
+        "groundDuelsRatio": 0.55737704,
+        "meanPressureBtl": 26.936937,
+        "meanPressureHeight": 69.746315,
+        "meanPressureOppDef": 15.679611,
+        "offensivePlayPerRemovedTeammates": 2.4638135,
+        "oppGkUnderPressurePercent": 0.3181818,
+        "passRatio": 0.79931974,
+        "pxtPosSum": 2.5273502,
+        "removeOpponentsRatio": 0.59080815,
+        "reversePlayRatio": 0.32425293,
+        "secondBallWinsPercent": 0.57377046,
+        "successfulPassesClean": 235.0,
+        "unsuccessfulPassesClean": 59.0
       }
     },
     {
-      "matchday": 7,
-      "opponent": "Adelaide United",
-      "venue": "away",
-      "date": "2026-01-24",
-      "result": "W 3-2",
-      "goals_for": 3,
-      "goals_against": 2,
-      "metrics": {
-        "style": {
-          "possession_control": 0.46,
-          "heavy_metal": 0.62,
-          "underdog_pressing": 0.62,
-          "direct_aerial": 0.48,
-          "safety_first": 0.41,
-          "counter_attacking": 0.48
-        },
-        "expected_goals": {
-          "packing_xg": 1.19,
-          "shot_based_xg": 1.19,
-          "post_shot_xg": 2.03
-        },
-        "buildup": {
-          "ball_progression": 327,
-          "defensive_ball_control": 126,
-          "critical_ball_loss": 7
-        },
-        "opponent": {
-          "opponent_ball_progression": 378,
-          "offensive_interventions": 206,
-          "own_defence_broken": 68
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 53,
-          "offensive_efficiency": 18,
-          "defensive_interventions": 257
-        },
-        "possession": {
-          "ball_possession_rate": 0.552,
-          "passing_accuracy": 0.824,
-          "successful_passes": 355,
-          "unsuccessful_passes": 76
-        },
-        "duels": {
-          "duel_rate": 0.443,
-          "ground_duel_success": 0.443,
-          "aerial_duel_success": 0.444
-        },
-        "shots": {
-          "total_shots": 8,
-          "shots_on_target": 4
-        },
-        "pressing": {
-          "pressuring_gk_pct": 0.15,
-          "avg_pressure_height_m": 67.9,
-          "avg_pressure_buildup": 15.80,
-          "forced_high_passes_pct": 0.29,
-          "avg_pressure_counter_press": 31.18
-        }
-      }
-    },
-    {
+      "match_id": 234120,
       "matchday": 8,
-      "opponent": "Auckland FC",
-      "venue": "away",
       "date": "2025-11-23",
+      "venue": "away",
       "result": "D 1-1",
       "goals_for": 1,
       "goals_against": 1,
+      "opponent": "Auckland FC",
+      "opponent_squad_id": 6640,
       "metrics": {
-        "style": {
-          "possession_control": 0.68,
-          "heavy_metal": 0.48,
-          "underdog_pressing": 0.49,
-          "direct_aerial": 0.40,
-          "safety_first": 0.63,
-          "counter_attacking": 0.39
-        },
         "expected_goals": {
-          "packing_xg": 1.45,
-          "shot_based_xg": 1.77,
-          "post_shot_xg": 1.56
+          "packing_xg": 1.77,
+          "shot_based_xg": 1.45,
+          "post_shot_xg": 1.56,
+          "developed_goal_threat": 2.0
         },
         "buildup": {
-          "ball_progression": 255,
-          "defensive_ball_control": 98,
-          "critical_ball_loss": 3
+          "ball_progression": 255.4,
+          "breaking_opponent_defence": 32.5,
+          "defensive_ball_control": 98.3,
+          "critical_ball_loss": 3,
+          "offensive_interventions": 187.2
         },
         "opponent": {
-          "opponent_ball_progression": 235,
-          "offensive_interventions": 187,
-          "own_defence_broken": 25
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 33,
-          "offensive_efficiency": 33,
-          "defensive_interventions": 187
+          "opponent_ball_progression": 235.0,
+          "opponent_breaking_defence": 25.0
         },
         "possession": {
           "ball_possession_rate": 0.55,
@@ -793,83 +637,1645 @@
           "avg_pressure_height_m": 61.2,
           "avg_pressure_buildup": 19.02,
           "forced_high_passes_pct": 0.15,
-          "avg_pressure_counter_press": 30.6
+          "avg_pressure_counter_press": 26.18
+        },
+        "ratios": {
+          "reverse_play": 0.283,
+          "add_opponents": 0.617,
+          "remove_opponents": 0.797,
+          "offensive_per_removed_teammates": 2.598
         }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 3.0,
+        "OFFENSIVE_PLAY": 255.365,
+        "OFFENSIVE_PLAY:opponent": 234.9695,
+        "OFFENSIVE_PLAY_DZ": 32.501,
+        "OFFENSIVE_PLAY_DZ:opponent": 24.9895,
+        "PACKING_NSXG": 1.4517698,
+        "PACKING_XG": 1.7685834,
+        "POSTSHOT_XG": 1.5599902,
+        "REMOVE_OPPONENTS": 187.24,
+        "REMOVE_OPPONENTS_DZ": 13.702,
+        "REMOVE_TEAMMATES": 98.30819,
+        "SECOND_BALL_WIN": 21.0,
+        "SECOND_BALL_WIN:opponent": 26.0,
+        "SHOT_AT_GOAL_NUMBER": 17.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 6.0,
+        "WON_AERIAL_DUELS": 7.0,
+        "WON_GROUND_DUELS": 14.0,
+        "addOpponentsRatio": 0.6174063,
+        "addTeammatesDefendersRatio": 0.58808315,
+        "addTeammatesRatio": 0.56106967,
+        "aerialDuelsRatio": 0.4375,
+        "ballPossessionRatio": 0.55016536,
+        "duelsRatio": 0.4375,
+        "forcedHighPassesPercent": 0.14634146,
+        "groundDuelsRatio": 0.4375,
+        "meanPressureBtl": 26.17647,
+        "meanPressureHeight": 61.17073,
+        "meanPressureOppDef": 19.024391,
+        "offensivePlayPerRemovedTeammates": 2.5975964,
+        "oppGkUnderPressurePercent": 0.14285715,
+        "passRatio": 0.8082596,
+        "pxtPosSum": 1.9981996,
+        "removeOpponentsRatio": 0.7968694,
+        "reversePlayRatio": 0.282585,
+        "secondBallWinsPercent": 0.44680852,
+        "successfulPassesClean": 274.0,
+        "unsuccessfulPassesClean": 65.0
       }
     },
     {
-      "matchday": 8,
-      "opponent": "Auckland FC",
+      "match_id": 234128,
+      "matchday": 10,
+      "date": "2025-11-09",
       "venue": "home",
-      "date": "2025-11-23",
+      "result": "W 3-0",
+      "goals_for": 3,
+      "goals_against": 0,
+      "opponent": "Newcastle United Jets",
+      "opponent_squad_id": 6379,
+      "metrics": {
+        "expected_goals": {
+          "packing_xg": 1.6,
+          "shot_based_xg": 0.63,
+          "post_shot_xg": 1.59,
+          "developed_goal_threat": 1.5
+        },
+        "buildup": {
+          "ball_progression": 300.7,
+          "breaking_opponent_defence": 48.0,
+          "defensive_ball_control": 49.7,
+          "critical_ball_loss": 1,
+          "offensive_interventions": 173.7
+        },
+        "opponent": {
+          "opponent_ball_progression": 405.0,
+          "opponent_breaking_defence": 41.7
+        },
+        "possession": {
+          "ball_possession_rate": 0.468,
+          "passing_accuracy": 0.834,
+          "successful_passes": 282,
+          "unsuccessful_passes": 56
+        },
+        "duels": {
+          "duel_rate": 0.518,
+          "ground_duel_success": 0.5,
+          "aerial_duel_success": 0.571
+        },
+        "shots": {
+          "total_shots": 17,
+          "shots_on_target": 6
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.14,
+          "avg_pressure_height_m": 62.3,
+          "avg_pressure_buildup": 16.28,
+          "forced_high_passes_pct": 0.16,
+          "avg_pressure_counter_press": 22.27
+        },
+        "ratios": {
+          "reverse_play": 0.367,
+          "add_opponents": 0.55,
+          "remove_opponents": 0.429,
+          "offensive_per_removed_teammates": 6.051
+        }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 1.0,
+        "OFFENSIVE_PLAY": 300.6694,
+        "OFFENSIVE_PLAY:opponent": 405.0152,
+        "OFFENSIVE_PLAY_DZ": 47.9849,
+        "OFFENSIVE_PLAY_DZ:opponent": 41.6578,
+        "PACKING_NSXG": 0.6333228,
+        "PACKING_XG": 1.59675,
+        "POSTSHOT_XG": 1.5943481,
+        "REMOVE_OPPONENTS": 173.748,
+        "REMOVE_OPPONENTS_DZ": 5.704,
+        "REMOVE_TEAMMATES": 49.688087,
+        "SECOND_BALL_WIN": 24.0,
+        "SECOND_BALL_WIN:opponent": 19.0,
+        "SHOT_AT_GOAL_NUMBER": 17.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 6.0,
+        "WON_AERIAL_DUELS": 12.0,
+        "WON_GROUND_DUELS": 32.0,
+        "addOpponentsRatio": 0.55042887,
+        "addTeammatesDefendersRatio": 0.5056893,
+        "addTeammatesRatio": 0.5175067,
+        "aerialDuelsRatio": 0.5714286,
+        "ballPossessionRatio": 0.46754467,
+        "duelsRatio": 0.5176471,
+        "forcedHighPassesPercent": 0.1641791,
+        "groundDuelsRatio": 0.5,
+        "meanPressureBtl": 22.265194,
+        "meanPressureHeight": 62.339314,
+        "meanPressureOppDef": 16.278027,
+        "offensivePlayPerRemovedTeammates": 6.0511365,
+        "oppGkUnderPressurePercent": 0.13793103,
+        "passRatio": 0.83431953,
+        "pxtPosSum": 1.5021706,
+        "removeOpponentsRatio": 0.42899132,
+        "reversePlayRatio": 0.36714095,
+        "secondBallWinsPercent": 0.55813956,
+        "successfulPassesClean": 282.0,
+        "unsuccessfulPassesClean": 56.0
+      }
+    },
+    {
+      "match_id": 234147,
+      "matchday": 13,
+      "date": "2025-10-17",
+      "venue": "home",
+      "result": "W 1-0",
+      "goals_for": 1,
+      "goals_against": 0,
+      "opponent": "Macarthur FC",
+      "opponent_squad_id": 6374,
+      "metrics": {
+        "expected_goals": {
+          "packing_xg": 1.01,
+          "shot_based_xg": 0.92,
+          "post_shot_xg": 1.05,
+          "developed_goal_threat": 1.28
+        },
+        "buildup": {
+          "ball_progression": 216.4,
+          "breaking_opponent_defence": 36.1,
+          "defensive_ball_control": 84.4,
+          "critical_ball_loss": 3,
+          "offensive_interventions": 191.5
+        },
+        "opponent": {
+          "opponent_ball_progression": 279.8,
+          "opponent_breaking_defence": 28.5
+        },
+        "possession": {
+          "ball_possession_rate": 0.367,
+          "passing_accuracy": 0.694,
+          "successful_passes": 154,
+          "unsuccessful_passes": 68
+        },
+        "duels": {
+          "duel_rate": 0.437,
+          "ground_duel_success": 0.447,
+          "aerial_duel_success": 0.424
+        },
+        "shots": {
+          "total_shots": 5,
+          "shots_on_target": 2
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.0,
+          "avg_pressure_height_m": 51.9,
+          "avg_pressure_buildup": 13.31,
+          "forced_high_passes_pct": 0.13,
+          "avg_pressure_counter_press": 24.5
+        },
+        "ratios": {
+          "reverse_play": 0.264,
+          "add_opponents": 0.621,
+          "remove_opponents": 0.685,
+          "offensive_per_removed_teammates": 2.564
+        }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 3.0,
+        "OFFENSIVE_PLAY": 216.4279,
+        "OFFENSIVE_PLAY:opponent": 279.753,
+        "OFFENSIVE_PLAY_DZ": 36.11,
+        "OFFENSIVE_PLAY_DZ:opponent": 28.5299,
+        "PACKING_NSXG": 0.91940194,
+        "PACKING_XG": 1.0111355,
+        "POSTSHOT_XG": 1.0488238,
+        "REMOVE_OPPONENTS": 191.547,
+        "REMOVE_OPPONENTS_DZ": 8.502,
+        "REMOVE_TEAMMATES": 84.3966,
+        "SECOND_BALL_WIN": 22.0,
+        "SECOND_BALL_WIN:opponent": 25.0,
+        "SHOT_AT_GOAL_NUMBER": 5.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 2.0,
+        "WON_AERIAL_DUELS": 14.0,
+        "WON_GROUND_DUELS": 17.0,
+        "addOpponentsRatio": 0.62088734,
+        "addTeammatesDefendersRatio": 0.36166006,
+        "addTeammatesRatio": 0.44003895,
+        "aerialDuelsRatio": 0.42424244,
+        "ballPossessionRatio": 0.3674464,
+        "duelsRatio": 0.43661973,
+        "forcedHighPassesPercent": 0.13207547,
+        "groundDuelsRatio": 0.4473684,
+        "meanPressureBtl": 24.496124,
+        "meanPressureHeight": 51.922337,
+        "meanPressureOppDef": 13.307693,
+        "offensivePlayPerRemovedTeammates": 2.564415,
+        "oppGkUnderPressurePercent": 0.0,
+        "passRatio": 0.6936937,
+        "pxtPosSum": 1.2750171,
+        "removeOpponentsRatio": 0.6847004,
+        "reversePlayRatio": 0.26398936,
+        "secondBallWinsPercent": 0.4680851,
+        "successfulPassesClean": 154.0,
+        "unsuccessfulPassesClean": 68.0
+      }
+    },
+    {
+      "match_id": 234164,
+      "matchday": 16,
+      "date": "2025-11-28",
+      "venue": "home",
+      "result": "W 1-0",
+      "goals_for": 1,
+      "goals_against": 0,
+      "opponent": "Melbourne Victory",
+      "opponent_squad_id": 2040,
+      "metrics": {
+        "expected_goals": {
+          "packing_xg": 0.55,
+          "shot_based_xg": 0.89,
+          "post_shot_xg": 0.83,
+          "developed_goal_threat": 1.72
+        },
+        "buildup": {
+          "ball_progression": 283.2,
+          "breaking_opponent_defence": 45.6,
+          "defensive_ball_control": 135.0,
+          "critical_ball_loss": 9,
+          "offensive_interventions": 183.7
+        },
+        "opponent": {
+          "opponent_ball_progression": 294.7,
+          "opponent_breaking_defence": 29.2
+        },
+        "possession": {
+          "ball_possession_rate": 0.446,
+          "passing_accuracy": 0.724,
+          "successful_passes": 152,
+          "unsuccessful_passes": 58
+        },
+        "duels": {
+          "duel_rate": 0.546,
+          "ground_duel_success": 0.485,
+          "aerial_duel_success": 0.65
+        },
+        "shots": {
+          "total_shots": 11,
+          "shots_on_target": 2
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.18,
+          "avg_pressure_height_m": 62.8,
+          "avg_pressure_buildup": 17.41,
+          "forced_high_passes_pct": 0.29,
+          "avg_pressure_counter_press": 28.09
+        },
+        "ratios": {
+          "reverse_play": 0.246,
+          "add_opponents": 0.619,
+          "remove_opponents": 0.623,
+          "offensive_per_removed_teammates": 2.098
+        }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 9.0,
+        "OFFENSIVE_PLAY": 283.2286,
+        "OFFENSIVE_PLAY:opponent": 294.7235,
+        "OFFENSIVE_PLAY_DZ": 45.601498,
+        "OFFENSIVE_PLAY_DZ:opponent": 29.2094,
+        "PACKING_NSXG": 0.8943811,
+        "PACKING_XG": 0.54521424,
+        "POSTSHOT_XG": 0.8301387,
+        "REMOVE_OPPONENTS": 183.741,
+        "REMOVE_OPPONENTS_DZ": 8.004,
+        "REMOVE_TEAMMATES": 134.9965,
+        "SECOND_BALL_WIN": 32.0,
+        "SECOND_BALL_WIN:opponent": 29.0,
+        "SHOT_AT_GOAL_NUMBER": 11.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 2.0,
+        "WON_AERIAL_DUELS": 26.0,
+        "WON_GROUND_DUELS": 33.0,
+        "addOpponentsRatio": 0.6194607,
+        "addTeammatesDefendersRatio": 0.62162435,
+        "addTeammatesRatio": 0.6191544,
+        "aerialDuelsRatio": 0.65,
+        "ballPossessionRatio": 0.44578314,
+        "duelsRatio": 0.5462963,
+        "forcedHighPassesPercent": 0.29310346,
+        "groundDuelsRatio": 0.4852941,
+        "meanPressureBtl": 28.089888,
+        "meanPressureHeight": 62.76506,
+        "meanPressureOppDef": 17.414967,
+        "offensivePlayPerRemovedTeammates": 2.098044,
+        "oppGkUnderPressurePercent": 0.1764706,
+        "passRatio": 0.72380954,
+        "pxtPosSum": 1.7210814,
+        "removeOpponentsRatio": 0.62343514,
+        "reversePlayRatio": 0.24600273,
+        "secondBallWinsPercent": 0.52459013,
+        "successfulPassesClean": 152.0,
+        "unsuccessfulPassesClean": 58.0
+      }
+    },
+    {
+      "match_id": 234175,
+      "matchday": 17,
+      "date": "2025-12-31",
+      "venue": "away",
+      "result": "L 1-2",
+      "goals_for": 1,
+      "goals_against": 2,
+      "opponent": "Central Coast Mariners",
+      "opponent_squad_id": 6373,
+      "metrics": {
+        "expected_goals": {
+          "packing_xg": 2.36,
+          "shot_based_xg": 2.14,
+          "post_shot_xg": 2.55,
+          "developed_goal_threat": 2.69
+        },
+        "buildup": {
+          "ball_progression": 343.3,
+          "breaking_opponent_defence": 50.8,
+          "defensive_ball_control": 104.5,
+          "critical_ball_loss": 7,
+          "offensive_interventions": 192.9
+        },
+        "opponent": {
+          "opponent_ball_progression": 257.7,
+          "opponent_breaking_defence": 35.4
+        },
+        "possession": {
+          "ball_possession_rate": 0.513,
+          "passing_accuracy": 0.882,
+          "successful_passes": 313,
+          "unsuccessful_passes": 42
+        },
+        "duels": {
+          "duel_rate": 0.444,
+          "ground_duel_success": 0.442,
+          "aerial_duel_success": 0.447
+        },
+        "shots": {
+          "total_shots": 20,
+          "shots_on_target": 8
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.06,
+          "avg_pressure_height_m": 66.9,
+          "avg_pressure_buildup": 12.8,
+          "forced_high_passes_pct": 0.23,
+          "avg_pressure_counter_press": 20.0
+        },
+        "ratios": {
+          "reverse_play": 0.35,
+          "add_opponents": 0.534,
+          "remove_opponents": 0.749,
+          "offensive_per_removed_teammates": 3.284
+        }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 7.0,
+        "OFFENSIVE_PLAY": 343.3255,
+        "OFFENSIVE_PLAY:opponent": 257.6807,
+        "OFFENSIVE_PLAY_DZ": 50.763,
+        "OFFENSIVE_PLAY_DZ:opponent": 35.397,
+        "PACKING_NSXG": 2.1390998,
+        "PACKING_XG": 2.3591762,
+        "POSTSHOT_XG": 2.54783,
+        "REMOVE_OPPONENTS": 192.916,
+        "REMOVE_OPPONENTS_DZ": 12.8,
+        "REMOVE_TEAMMATES": 104.53968,
+        "SECOND_BALL_WIN": 35.0,
+        "SECOND_BALL_WIN:opponent": 28.0,
+        "SHOT_AT_GOAL_NUMBER": 20.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 8.0,
+        "WON_AERIAL_DUELS": 17.0,
+        "WON_GROUND_DUELS": 19.0,
+        "addOpponentsRatio": 0.5341772,
+        "addTeammatesDefendersRatio": 0.3683784,
+        "addTeammatesRatio": 0.5540274,
+        "aerialDuelsRatio": 0.4473684,
+        "ballPossessionRatio": 0.51289135,
+        "duelsRatio": 0.44444445,
+        "forcedHighPassesPercent": 0.23404256,
+        "groundDuelsRatio": 0.44186047,
+        "meanPressureBtl": 20.0,
+        "meanPressureHeight": 66.93608,
+        "meanPressureOppDef": 12.803739,
+        "offensivePlayPerRemovedTeammates": 3.2841644,
+        "oppGkUnderPressurePercent": 0.05882353,
+        "passRatio": 0.88169014,
+        "pxtPosSum": 2.686756,
+        "removeOpponentsRatio": 0.748663,
+        "reversePlayRatio": 0.34997907,
+        "secondBallWinsPercent": 0.5555556,
+        "successfulPassesClean": 313.0,
+        "unsuccessfulPassesClean": 42.0
+      }
+    },
+    {
+      "match_id": 234184,
+      "matchday": 19,
+      "date": "2026-01-31",
+      "venue": "away",
+      "result": "W 4-1",
+      "goals_for": 4,
+      "goals_against": 1,
+      "opponent": "Newcastle United Jets",
+      "opponent_squad_id": 6379,
+      "metrics": {
+        "expected_goals": {
+          "packing_xg": 0.44,
+          "shot_based_xg": 0.49,
+          "post_shot_xg": 0.47,
+          "developed_goal_threat": 1.27
+        },
+        "buildup": {
+          "ball_progression": 283.7,
+          "breaking_opponent_defence": 33.0,
+          "defensive_ball_control": 143.0,
+          "critical_ball_loss": 15,
+          "offensive_interventions": 164.8
+        },
+        "opponent": {
+          "opponent_ball_progression": 391.9,
+          "opponent_breaking_defence": 57.7
+        },
+        "possession": {
+          "ball_possession_rate": 0.398,
+          "passing_accuracy": 0.731,
+          "successful_passes": 166,
+          "unsuccessful_passes": 61
+        },
+        "duels": {
+          "duel_rate": 0.557,
+          "ground_duel_success": 0.542,
+          "aerial_duel_success": 0.643
+        },
+        "shots": {
+          "total_shots": 7,
+          "shots_on_target": 3
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.17,
+          "avg_pressure_height_m": 62.0,
+          "avg_pressure_buildup": 16.0,
+          "forced_high_passes_pct": 0.15,
+          "avg_pressure_counter_press": 26.38
+        },
+        "ratios": {
+          "reverse_play": 0.308,
+          "add_opponents": 0.607,
+          "remove_opponents": 0.421,
+          "offensive_per_removed_teammates": 1.984
+        }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 15.0,
+        "OFFENSIVE_PLAY": 283.7085,
+        "OFFENSIVE_PLAY:opponent": 391.9154,
+        "OFFENSIVE_PLAY_DZ": 32.9986,
+        "OFFENSIVE_PLAY_DZ:opponent": 57.696,
+        "PACKING_NSXG": 0.48556453,
+        "PACKING_XG": 0.44469103,
+        "POSTSHOT_XG": 0.4726131,
+        "REMOVE_OPPONENTS": 164.845,
+        "REMOVE_OPPONENTS_DZ": 8.403,
+        "REMOVE_TEAMMATES": 142.99509,
+        "SECOND_BALL_WIN": 19.0,
+        "SECOND_BALL_WIN:opponent": 27.0,
+        "SHOT_AT_GOAL_NUMBER": 7.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 3.0,
+        "WON_AERIAL_DUELS": 9.0,
+        "WON_GROUND_DUELS": 45.0,
+        "addOpponentsRatio": 0.60695696,
+        "addTeammatesDefendersRatio": 0.32851997,
+        "addTeammatesRatio": 0.49261516,
+        "aerialDuelsRatio": 0.64285713,
+        "ballPossessionRatio": 0.39770356,
+        "duelsRatio": 0.556701,
+        "forcedHighPassesPercent": 0.14545454,
+        "groundDuelsRatio": 0.5421687,
+        "meanPressureBtl": 26.37931,
+        "meanPressureHeight": 62.046364,
+        "meanPressureOppDef": 16.0,
+        "offensivePlayPerRemovedTeammates": 1.9840437,
+        "oppGkUnderPressurePercent": 0.17021276,
+        "passRatio": 0.7312775,
+        "pxtPosSum": 1.2674593,
+        "removeOpponentsRatio": 0.42061374,
+        "reversePlayRatio": 0.30840236,
+        "secondBallWinsPercent": 0.41304347,
+        "successfulPassesClean": 166.0,
+        "unsuccessfulPassesClean": 61.0
+      }
+    },
+    {
+      "match_id": 234194,
+      "matchday": 21,
+      "date": "2025-10-31",
+      "venue": "home",
+      "result": "D 0-0",
+      "goals_for": 0,
+      "goals_against": 0,
+      "opponent": "Melbourne City FC",
+      "opponent_squad_id": 3448,
+      "metrics": {
+        "expected_goals": {
+          "packing_xg": 1.23,
+          "shot_based_xg": 1.27,
+          "post_shot_xg": 0.64,
+          "developed_goal_threat": 1.52
+        },
+        "buildup": {
+          "ball_progression": 341.4,
+          "breaking_opponent_defence": 38.0,
+          "defensive_ball_control": 165.4,
+          "critical_ball_loss": 16,
+          "offensive_interventions": 238.8
+        },
+        "opponent": {
+          "opponent_ball_progression": 360.2,
+          "opponent_breaking_defence": 37.8
+        },
+        "possession": {
+          "ball_possession_rate": 0.438,
+          "passing_accuracy": 0.699,
+          "successful_passes": 269,
+          "unsuccessful_passes": 116
+        },
+        "duels": {
+          "duel_rate": 0.488,
+          "ground_duel_success": 0.531,
+          "aerial_duel_success": 0.364
+        },
+        "shots": {
+          "total_shots": 12,
+          "shots_on_target": 2
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.05,
+          "avg_pressure_height_m": 60.5,
+          "avg_pressure_buildup": 12.81,
+          "forced_high_passes_pct": 0.09,
+          "avg_pressure_counter_press": 27.08
+        },
+        "ratios": {
+          "reverse_play": 0.374,
+          "add_opponents": 0.538,
+          "remove_opponents": 0.663,
+          "offensive_per_removed_teammates": 2.064
+        }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 16.0,
+        "OFFENSIVE_PLAY": 341.3788,
+        "OFFENSIVE_PLAY:opponent": 360.233,
+        "OFFENSIVE_PLAY_DZ": 38.0,
+        "OFFENSIVE_PLAY_DZ:opponent": 37.8,
+        "PACKING_NSXG": 1.2736545,
+        "PACKING_XG": 1.2296352,
+        "POSTSHOT_XG": 0.63956493,
+        "REMOVE_OPPONENTS": 238.816,
+        "REMOVE_OPPONENTS_DZ": 13.401,
+        "REMOVE_TEAMMATES": 165.3752,
+        "SECOND_BALL_WIN": 23.0,
+        "SECOND_BALL_WIN:opponent": 25.0,
+        "SHOT_AT_GOAL_NUMBER": 12.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 2.0,
+        "WON_AERIAL_DUELS": 4.0,
+        "WON_GROUND_DUELS": 17.0,
+        "addOpponentsRatio": 0.5376674,
+        "addTeammatesDefendersRatio": 0.49669063,
+        "addTeammatesRatio": 0.5477045,
+        "aerialDuelsRatio": 0.36363637,
+        "ballPossessionRatio": 0.43782383,
+        "duelsRatio": 0.4883721,
+        "forcedHighPassesPercent": 0.09090909,
+        "groundDuelsRatio": 0.53125,
+        "meanPressureBtl": 27.083334,
+        "meanPressureHeight": 60.453884,
+        "meanPressureOppDef": 12.8125,
+        "offensivePlayPerRemovedTeammates": 2.0642686,
+        "oppGkUnderPressurePercent": 0.054054055,
+        "passRatio": 0.6987013,
+        "pxtPosSum": 1.521237,
+        "removeOpponentsRatio": 0.66294867,
+        "reversePlayRatio": 0.3735282,
+        "secondBallWinsPercent": 0.47916666,
+        "successfulPassesClean": 269.0,
+        "unsuccessfulPassesClean": 116.0
+      }
+    },
+    {
+      "match_id": 234205,
+      "matchday": 22,
+      "date": "2025-12-07",
+      "venue": "away",
+      "result": "L 0-1",
+      "goals_for": 0,
+      "goals_against": 1,
+      "opponent": "Adelaide United",
+      "opponent_squad_id": 6372,
+      "metrics": {
+        "expected_goals": {
+          "packing_xg": 1.19,
+          "shot_based_xg": 0.71,
+          "post_shot_xg": 1.8,
+          "developed_goal_threat": 1.53
+        },
+        "buildup": {
+          "ball_progression": 323.6,
+          "breaking_opponent_defence": 56.0,
+          "defensive_ball_control": 114.7,
+          "critical_ball_loss": 7,
+          "offensive_interventions": 178.6
+        },
+        "opponent": {
+          "opponent_ball_progression": 356.7,
+          "opponent_breaking_defence": 38.0
+        },
+        "possession": {
+          "ball_possession_rate": 0.431,
+          "passing_accuracy": 0.809,
+          "successful_passes": 233,
+          "unsuccessful_passes": 55
+        },
+        "duels": {
+          "duel_rate": 0.512,
+          "ground_duel_success": 0.479,
+          "aerial_duel_success": 0.727
+        },
+        "shots": {
+          "total_shots": 16,
+          "shots_on_target": 8
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.18,
+          "avg_pressure_height_m": 58.7,
+          "avg_pressure_buildup": 20.68,
+          "forced_high_passes_pct": 0.28,
+          "avg_pressure_counter_press": 23.52
+        },
+        "ratios": {
+          "reverse_play": 0.303,
+          "add_opponents": 0.615,
+          "remove_opponents": 0.501,
+          "offensive_per_removed_teammates": 2.822
+        }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 7.0,
+        "OFFENSIVE_PLAY": 323.5961,
+        "OFFENSIVE_PLAY:opponent": 356.6737,
+        "OFFENSIVE_PLAY_DZ": 56.0,
+        "OFFENSIVE_PLAY_DZ:opponent": 37.9714,
+        "PACKING_NSXG": 0.7132121,
+        "PACKING_XG": 1.1869574,
+        "POSTSHOT_XG": 1.8015978,
+        "REMOVE_OPPONENTS": 178.627,
+        "REMOVE_OPPONENTS_DZ": 5.4,
+        "REMOVE_TEAMMATES": 114.65361,
+        "SECOND_BALL_WIN": 19.0,
+        "SECOND_BALL_WIN:opponent": 30.0,
+        "SHOT_AT_GOAL_NUMBER": 16.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 8.0,
+        "WON_AERIAL_DUELS": 8.0,
+        "WON_GROUND_DUELS": 34.0,
+        "addOpponentsRatio": 0.61500907,
+        "addTeammatesDefendersRatio": 0.6947392,
+        "addTeammatesRatio": 0.52997994,
+        "aerialDuelsRatio": 0.72727275,
+        "ballPossessionRatio": 0.4310511,
+        "duelsRatio": 0.5121951,
+        "forcedHighPassesPercent": 0.27941176,
+        "groundDuelsRatio": 0.47887325,
+        "meanPressureBtl": 23.515152,
+        "meanPressureHeight": 58.745792,
+        "meanPressureOppDef": 20.681818,
+        "offensivePlayPerRemovedTeammates": 2.8223803,
+        "oppGkUnderPressurePercent": 0.1764706,
+        "passRatio": 0.8090278,
+        "pxtPosSum": 1.5259637,
+        "removeOpponentsRatio": 0.5008135,
+        "reversePlayRatio": 0.3032287,
+        "secondBallWinsPercent": 0.3877551,
+        "successfulPassesClean": 233.0,
+        "unsuccessfulPassesClean": 55.0
+      }
+    },
+    {
+      "match_id": 234209,
+      "matchday": 23,
+      "date": "2026-02-07",
+      "venue": "home",
+      "result": "L 1-2",
+      "goals_for": 1,
+      "goals_against": 2,
+      "opponent": "Central Coast Mariners",
+      "opponent_squad_id": 6373,
+      "metrics": {
+        "expected_goals": {
+          "packing_xg": 0.94,
+          "shot_based_xg": 0.72,
+          "post_shot_xg": 0.3,
+          "developed_goal_threat": 1.55
+        },
+        "buildup": {
+          "ball_progression": 277.4,
+          "breaking_opponent_defence": 43.4,
+          "defensive_ball_control": 104.9,
+          "critical_ball_loss": 9,
+          "offensive_interventions": 146.8
+        },
+        "opponent": {
+          "opponent_ball_progression": 274.3,
+          "opponent_breaking_defence": 24.3
+        },
+        "possession": {
+          "ball_possession_rate": 0.443,
+          "passing_accuracy": 0.775,
+          "successful_passes": 221,
+          "unsuccessful_passes": 64
+        },
+        "duels": {
+          "duel_rate": 0.56,
+          "ground_duel_success": 0.5,
+          "aerial_duel_success": 0.622
+        },
+        "shots": {
+          "total_shots": 12,
+          "shots_on_target": 3
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.19,
+          "avg_pressure_height_m": 66.8,
+          "avg_pressure_buildup": 10.69,
+          "forced_high_passes_pct": 0.24,
+          "avg_pressure_counter_press": 22.14
+        },
+        "ratios": {
+          "reverse_play": 0.29,
+          "add_opponents": 0.601,
+          "remove_opponents": 0.535,
+          "offensive_per_removed_teammates": 2.645
+        }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 9.0,
+        "OFFENSIVE_PLAY": 277.449,
+        "OFFENSIVE_PLAY:opponent": 274.2554,
+        "OFFENSIVE_PLAY_DZ": 43.44,
+        "OFFENSIVE_PLAY_DZ:opponent": 24.3,
+        "PACKING_NSXG": 0.72339374,
+        "PACKING_XG": 0.93531793,
+        "POSTSHOT_XG": 0.30264044,
+        "REMOVE_OPPONENTS": 146.818,
+        "REMOVE_OPPONENTS_DZ": 9.701,
+        "REMOVE_TEAMMATES": 104.9057,
+        "SECOND_BALL_WIN": 19.0,
+        "SECOND_BALL_WIN:opponent": 20.0,
+        "SHOT_AT_GOAL_NUMBER": 12.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 3.0,
+        "WON_AERIAL_DUELS": 23.0,
+        "WON_GROUND_DUELS": 19.0,
+        "addOpponentsRatio": 0.60112864,
+        "addTeammatesDefendersRatio": 0.44855967,
+        "addTeammatesRatio": 0.41059065,
+        "aerialDuelsRatio": 0.6216216,
+        "ballPossessionRatio": 0.4433095,
+        "duelsRatio": 0.56,
+        "forcedHighPassesPercent": 0.24,
+        "groundDuelsRatio": 0.5,
+        "meanPressureBtl": 22.142857,
+        "meanPressureHeight": 66.79478,
+        "meanPressureOppDef": 10.689655,
+        "offensivePlayPerRemovedTeammates": 2.6447468,
+        "oppGkUnderPressurePercent": 0.1904762,
+        "passRatio": 0.7754386,
+        "pxtPosSum": 1.549666,
+        "removeOpponentsRatio": 0.5353331,
+        "reversePlayRatio": 0.2896501,
+        "secondBallWinsPercent": 0.4871795,
+        "successfulPassesClean": 221.0,
+        "unsuccessfulPassesClean": 64.0
+      }
+    },
+    {
+      "match_id": 234212,
+      "matchday": 24,
+      "date": "2026-01-09",
+      "venue": "home",
+      "result": "L 0-2",
+      "goals_for": 0,
+      "goals_against": 2,
+      "opponent": "Auckland FC",
+      "opponent_squad_id": 6640,
+      "metrics": {
+        "expected_goals": {
+          "packing_xg": 0.73,
+          "shot_based_xg": 0.59,
+          "post_shot_xg": 0.38,
+          "developed_goal_threat": 1.34
+        },
+        "buildup": {
+          "ball_progression": 285.8,
+          "breaking_opponent_defence": 32.2,
+          "defensive_ball_control": 99.4,
+          "critical_ball_loss": 6,
+          "offensive_interventions": 198.0
+        },
+        "opponent": {
+          "opponent_ball_progression": 253.4,
+          "opponent_breaking_defence": 36.6
+        },
+        "possession": {
+          "ball_possession_rate": 0.573,
+          "passing_accuracy": 0.83,
+          "successful_passes": 312,
+          "unsuccessful_passes": 64
+        },
+        "duels": {
+          "duel_rate": 0.383,
+          "ground_duel_success": 0.411,
+          "aerial_duel_success": 0.342
+        },
+        "shots": {
+          "total_shots": 12,
+          "shots_on_target": 3
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.14,
+          "avg_pressure_height_m": 63.6,
+          "avg_pressure_buildup": 19.24,
+          "forced_high_passes_pct": 0.18,
+          "avg_pressure_counter_press": 24.05
+        },
+        "ratios": {
+          "reverse_play": 0.318,
+          "add_opponents": 0.551,
+          "remove_opponents": 0.782,
+          "offensive_per_removed_teammates": 2.874
+        }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 6.0,
+        "OFFENSIVE_PLAY": 285.84,
+        "OFFENSIVE_PLAY:opponent": 253.391,
+        "OFFENSIVE_PLAY_DZ": 32.202,
+        "OFFENSIVE_PLAY_DZ:opponent": 36.629,
+        "PACKING_NSXG": 0.5924126,
+        "PACKING_XG": 0.72962964,
+        "POSTSHOT_XG": 0.3779508,
+        "REMOVE_OPPONENTS": 198.036,
+        "REMOVE_OPPONENTS_DZ": 3.9,
+        "REMOVE_TEAMMATES": 99.44708,
+        "SECOND_BALL_WIN": 33.0,
+        "SECOND_BALL_WIN:opponent": 19.0,
+        "SHOT_AT_GOAL_NUMBER": 12.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 3.0,
+        "WON_AERIAL_DUELS": 13.0,
+        "WON_GROUND_DUELS": 23.0,
+        "addOpponentsRatio": 0.5512713,
+        "addTeammatesDefendersRatio": 0.44242817,
+        "addTeammatesRatio": 0.5498018,
+        "aerialDuelsRatio": 0.34210527,
+        "ballPossessionRatio": 0.5727554,
+        "duelsRatio": 0.38297874,
+        "forcedHighPassesPercent": 0.18181819,
+        "groundDuelsRatio": 0.4107143,
+        "meanPressureBtl": 24.047619,
+        "meanPressureHeight": 63.557663,
+        "meanPressureOppDef": 19.240507,
+        "offensivePlayPerRemovedTeammates": 2.8742924,
+        "oppGkUnderPressurePercent": 0.14285715,
+        "passRatio": 0.82978725,
+        "pxtPosSum": 1.3369601,
+        "removeOpponentsRatio": 0.78154314,
+        "reversePlayRatio": 0.31793743,
+        "secondBallWinsPercent": 0.63461536,
+        "successfulPassesClean": 312.0,
+        "unsuccessfulPassesClean": 64.0
+      }
+    },
+    {
+      "match_id": 234223,
+      "matchday": 25,
+      "date": "2025-12-19",
+      "venue": "away",
+      "result": "W 2-1",
+      "goals_for": 2,
+      "goals_against": 1,
+      "opponent": "Macarthur FC",
+      "opponent_squad_id": 6374,
+      "metrics": {
+        "expected_goals": {
+          "packing_xg": 1.13,
+          "shot_based_xg": 1.31,
+          "post_shot_xg": 1.37,
+          "developed_goal_threat": 1.54
+        },
+        "buildup": {
+          "ball_progression": 320.2,
+          "breaking_opponent_defence": 50.2,
+          "defensive_ball_control": 108.3,
+          "critical_ball_loss": 13,
+          "offensive_interventions": 117.1
+        },
+        "opponent": {
+          "opponent_ball_progression": 251.0,
+          "opponent_breaking_defence": 34.3
+        },
+        "possession": {
+          "ball_possession_rate": 0.569,
+          "passing_accuracy": 0.882,
+          "successful_passes": 353,
+          "unsuccessful_passes": 47
+        },
+        "duels": {
+          "duel_rate": 0.433,
+          "ground_duel_success": 0.381,
+          "aerial_duel_success": 0.556
+        },
+        "shots": {
+          "total_shots": 14,
+          "shots_on_target": 5
+        },
+        "pressing": {
+          "pressuring_gk_pct": 0.29,
+          "avg_pressure_height_m": 62.6,
+          "avg_pressure_buildup": 16.49,
+          "forced_high_passes_pct": 0.22,
+          "avg_pressure_counter_press": 23.19
+        },
+        "ratios": {
+          "reverse_play": 0.419,
+          "add_opponents": 0.413,
+          "remove_opponents": 0.467,
+          "offensive_per_removed_teammates": 2.955
+        }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 13.0,
+        "OFFENSIVE_PLAY": 320.2,
+        "OFFENSIVE_PLAY:opponent": 250.967,
+        "OFFENSIVE_PLAY_DZ": 50.2,
+        "OFFENSIVE_PLAY_DZ:opponent": 34.3,
+        "PACKING_NSXG": 1.3116311,
+        "PACKING_XG": 1.1333073,
+        "POSTSHOT_XG": 1.3686553,
+        "REMOVE_OPPONENTS": 117.106,
+        "REMOVE_OPPONENTS_DZ": 2.4,
+        "REMOVE_TEAMMATES": 108.346,
+        "SECOND_BALL_WIN": 13.0,
+        "SECOND_BALL_WIN:opponent": 11.0,
+        "SHOT_AT_GOAL_NUMBER": 14.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 5.0,
+        "WON_AERIAL_DUELS": 10.0,
+        "WON_GROUND_DUELS": 16.0,
+        "addOpponentsRatio": 0.41257757,
+        "addTeammatesDefendersRatio": 0.5039354,
+        "addTeammatesRatio": 0.5762664,
+        "aerialDuelsRatio": 0.5555556,
+        "ballPossessionRatio": 0.56902003,
+        "duelsRatio": 0.43333334,
+        "forcedHighPassesPercent": 0.21621622,
+        "groundDuelsRatio": 0.3809524,
+        "meanPressureBtl": 23.194445,
+        "meanPressureHeight": 62.630806,
+        "meanPressureOppDef": 16.492537,
+        "offensivePlayPerRemovedTeammates": 2.9553468,
+        "oppGkUnderPressurePercent": 0.2857143,
+        "passRatio": 0.8825,
+        "pxtPosSum": 1.5358675,
+        "removeOpponentsRatio": 0.46661913,
+        "reversePlayRatio": 0.4187221,
+        "secondBallWinsPercent": 0.5416667,
+        "successfulPassesClean": 353.0,
+        "unsuccessfulPassesClean": 47.0
+      }
+    },
+    {
+      "match_id": 234228,
+      "matchday": 26,
+      "date": "2026-02-14",
+      "venue": "away",
       "result": "D 1-1",
       "goals_for": 1,
       "goals_against": 1,
+      "opponent": "Melbourne Victory",
+      "opponent_squad_id": 2040,
       "metrics": {
-        "style": {
-          "possession_control": 0.41,
-          "heavy_metal": 0.38,
-          "underdog_pressing": 0.39,
-          "direct_aerial": 0.62,
-          "safety_first": 0.47,
-          "counter_attacking": 0.32
-        },
         "expected_goals": {
-          "packing_xg": 0.71,
-          "shot_based_xg": 1.04,
-          "post_shot_xg": 0.75
+          "packing_xg": 0.83,
+          "shot_based_xg": 1.03,
+          "post_shot_xg": 1.05,
+          "developed_goal_threat": 1.58
         },
         "buildup": {
-          "ball_progression": 235,
-          "defensive_ball_control": 133,
-          "critical_ball_loss": 7
+          "ball_progression": 285.0,
+          "breaking_opponent_defence": 53.2,
+          "defensive_ball_control": 133.2,
+          "critical_ball_loss": 8,
+          "offensive_interventions": 196.9
         },
         "opponent": {
-          "opponent_ball_progression": 255,
-          "offensive_interventions": 150,
-          "own_defence_broken": 33
-        },
-        "efficiency": {
-          "breaking_opponent_defence": 25,
-          "offensive_efficiency": 25,
-          "defensive_interventions": 225
+          "opponent_ball_progression": 402.4,
+          "opponent_breaking_defence": 41.0
         },
         "possession": {
-          "ball_possession_rate": 0.45,
-          "passing_accuracy": 0.80,
-          "successful_passes": 250,
-          "unsuccessful_passes": 62
+          "ball_possession_rate": 0.413,
+          "passing_accuracy": 0.71,
+          "successful_passes": 171,
+          "unsuccessful_passes": 70
         },
         "duels": {
-          "duel_rate": 0.50,
-          "ground_duel_success": 0.50,
-          "aerial_duel_success": 0.50
+          "duel_rate": 0.484,
+          "ground_duel_success": 0.439,
+          "aerial_duel_success": 0.565
         },
         "shots": {
           "total_shots": 10,
-          "shots_on_target": 4
+          "shots_on_target": 3
         },
         "pressing": {
-          "pressuring_gk_pct": 0.20,
-          "avg_pressure_height_m": 58.0,
-          "avg_pressure_buildup": 16.0,
-          "forced_high_passes_pct": 0.12,
-          "avg_pressure_counter_press": 28.0
+          "pressuring_gk_pct": 0.21,
+          "avg_pressure_height_m": 58.8,
+          "avg_pressure_buildup": 14.95,
+          "forced_high_passes_pct": 0.21,
+          "avg_pressure_counter_press": 25.04
+        },
+        "ratios": {
+          "reverse_play": 0.213,
+          "add_opponents": 0.673,
+          "remove_opponents": 0.489,
+          "offensive_per_removed_teammates": 2.14
         }
+      },
+      "raw_kpis": {
+        "CRITICAL_BALL_LOSS_NUMBER": 8.0,
+        "OFFENSIVE_PLAY": 284.9752,
+        "OFFENSIVE_PLAY:opponent": 402.405,
+        "OFFENSIVE_PLAY_DZ": 53.1874,
+        "OFFENSIVE_PLAY_DZ:opponent": 41.0,
+        "PACKING_NSXG": 1.033367,
+        "PACKING_XG": 0.83496803,
+        "POSTSHOT_XG": 1.0477316,
+        "REMOVE_OPPONENTS": 196.913,
+        "REMOVE_OPPONENTS_DZ": 7.4,
+        "REMOVE_TEAMMATES": 133.1709,
+        "SECOND_BALL_WIN": 20.0,
+        "SECOND_BALL_WIN:opponent": 27.0,
+        "SHOT_AT_GOAL_NUMBER": 10.0,
+        "SHOT_AT_GOAL_NUMBER_ON_TARGET": 3.0,
+        "WON_AERIAL_DUELS": 13.0,
+        "WON_GROUND_DUELS": 18.0,
+        "addOpponentsRatio": 0.6729836,
+        "addTeammatesDefendersRatio": 0.5036158,
+        "addTeammatesRatio": 0.49674565,
+        "aerialDuelsRatio": 0.5652174,
+        "ballPossessionRatio": 0.4125122,
+        "duelsRatio": 0.484375,
+        "forcedHighPassesPercent": 0.21311475,
+        "groundDuelsRatio": 0.4390244,
+        "meanPressureBtl": 25.03876,
+        "meanPressureHeight": 58.79323,
+        "meanPressureOppDef": 14.951456,
+        "offensivePlayPerRemovedTeammates": 2.139921,
+        "oppGkUnderPressurePercent": 0.21428572,
+        "passRatio": 0.7095436,
+        "pxtPosSum": 1.5839982,
+        "removeOpponentsRatio": 0.48934034,
+        "reversePlayRatio": 0.21317269,
+        "secondBallWinsPercent": 0.42553192,
+        "successfulPassesClean": 171.0,
+        "unsuccessfulPassesClean": 70.0
       }
     }
   ],
-  "summary": {
-    "total_matches": 14,
-    "record": {
-      "wins": 6,
-      "draws": 4,
-      "losses": 4
+  "players": [
+    {
+      "id": 21594,
+      "name": "Asumah Abubakar",
+      "short_name": "Abubakar",
+      "birth_date": "1997-05-10",
+      "height": 1.83,
+      "preferred_foot": "RIGHT"
     },
-    "goals_for": 17,
-    "goals_against": 16,
-    "avg_xg": 1.26,
-    "avg_possession": 0.49,
-    "avg_pass_accuracy": 0.81
+    {
+      "id": 62802,
+      "name": "N\u00e9icer Acosta",
+      "short_name": "Acosta",
+      "birth_date": "2002-12-12",
+      "height": 1.74,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 55169,
+      "name": "Matt Acton",
+      "short_name": "Acton",
+      "birth_date": "1992-06-03",
+      "height": 1.84,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 25403,
+      "name": "Tom Aldred",
+      "short_name": "Aldred",
+      "birth_date": "1990-09-11",
+      "height": 1.88,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 212066,
+      "name": "Nathan Amanatidis",
+      "short_name": "Amanatidis",
+      "birth_date": "2006-01-23",
+      "height": 1.81,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 68863,
+      "name": "Carlo Armiento",
+      "short_name": "Armiento",
+      "birth_date": "1999-06-04",
+      "height": 1.79,
+      "preferred_foot": "LEFT"
+    },
+    {
+      "id": 57660,
+      "name": "Florin B\u00e9renguer",
+      "short_name": "B\u00e9renguer",
+      "birth_date": "1989-04-01",
+      "height": 1.82,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 56790,
+      "name": "Hosine Bility",
+      "short_name": "Bility",
+      "birth_date": "2001-05-10",
+      "height": 1.87,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 45523,
+      "name": "Dean Bouzanis",
+      "short_name": "Bouzanis",
+      "birth_date": "1990-10-02",
+      "height": 1.89,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 232238,
+      "name": "Jacob Brazete",
+      "short_name": "Brazete",
+      "birth_date": "2006-01-20",
+      "height": 1.78,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 55176,
+      "name": "Corey Brown",
+      "short_name": "Brown",
+      "birth_date": "1994-01-07",
+      "height": 1.74,
+      "preferred_foot": "LEFT"
+    },
+    {
+      "id": 211985,
+      "name": "Rylan Brownlie",
+      "short_name": "Brownlie",
+      "birth_date": "2007-02-18",
+      "height": 1.78,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 97980,
+      "name": "Antonee Burke-Gilroy",
+      "short_name": "Burke-Gilroy",
+      "birth_date": "1997-10-03",
+      "height": 1.78,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 114378,
+      "name": "Shae Cahill",
+      "short_name": "Cahill",
+      "birth_date": "2005-04-26",
+      "height": 1.71,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 198989,
+      "name": "Joe Caletti",
+      "short_name": "Caletti",
+      "birth_date": "1998-09-14",
+      "height": 1.7,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 56519,
+      "name": "Nick D'Agostino",
+      "short_name": "D'Agostino",
+      "birth_date": "1998-02-25",
+      "height": 1.75,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 129433,
+      "name": "Matt Dench",
+      "short_name": "Dench",
+      "birth_date": "2003-12-08",
+      "height": 1.75,
+      "preferred_foot": "LEFT"
+    },
+    {
+      "id": 249371,
+      "name": "James Durrington",
+      "short_name": "Durrington",
+      "birth_date": "2006-03-26",
+      "height": 1.73,
+      "preferred_foot": null
+    },
+    {
+      "id": 313800,
+      "name": "Mikael Evagorou",
+      "short_name": "Evagorou",
+      "birth_date": "2007-04-19",
+      "height": null,
+      "preferred_foot": null
+    },
+    {
+      "id": 211989,
+      "name": "Macklin Freke",
+      "short_name": "Freke",
+      "birth_date": "1999-01-06",
+      "height": 1.93,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 113888,
+      "name": "Taras Gomulka",
+      "short_name": "Gomulka",
+      "birth_date": "2001-09-16",
+      "height": 1.83,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 9733,
+      "name": "Ben Halloran",
+      "short_name": "Halloran",
+      "birth_date": "1992-06-14",
+      "height": 1.82,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 229984,
+      "name": "Lucas Herrington",
+      "short_name": "Herrington",
+      "birth_date": "2007-09-05",
+      "height": 1.86,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 211993,
+      "name": "Jack Hingert",
+      "short_name": "Hingert",
+      "birth_date": "1990-09-26",
+      "height": 1.7,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 211986,
+      "name": "Henry Hore",
+      "short_name": "Hore",
+      "birth_date": "1999-08-17",
+      "height": 1.8,
+      "preferred_foot": "BOTH"
+    },
+    {
+      "id": 53281,
+      "name": "Keegan Jelacic",
+      "short_name": "Jelacic",
+      "birth_date": "2002-07-31",
+      "height": 1.77,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 237046,
+      "name": "Pearson Kasawaya",
+      "short_name": "Kasawaya",
+      "birth_date": "2006-10-14",
+      "height": 1.81,
+      "preferred_foot": "LEFT"
+    },
+    {
+      "id": 228705,
+      "name": "Sam Klein",
+      "short_name": "Klein",
+      "birth_date": "2004-03-15",
+      "height": 1.88,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 212097,
+      "name": "Jordan Lauton",
+      "short_name": "Lauton",
+      "birth_date": "2003-04-01",
+      "height": 1.8,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 212090,
+      "name": "Ryan Lethlean",
+      "short_name": "Lethlean",
+      "birth_date": "2002-03-27",
+      "height": 1.93,
+      "preferred_foot": "LEFT"
+    },
+    {
+      "id": 43793,
+      "name": "Marius Lode",
+      "short_name": "Lode",
+      "birth_date": "1993-03-11",
+      "height": 1.85,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 212058,
+      "name": "Jez Lofthouse",
+      "short_name": "Lofthouse",
+      "birth_date": "1999-10-16",
+      "height": 1.7,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 24023,
+      "name": "Chris Long",
+      "short_name": "Long",
+      "birth_date": "1995-02-25",
+      "height": 1.79,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 243038,
+      "name": "Austin Ludwik",
+      "short_name": "Ludwik",
+      "birth_date": "1997-02-11",
+      "height": 1.83,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 212040,
+      "name": "Quinn MacNicol",
+      "short_name": "MacNicol",
+      "birth_date": "2008-02-14",
+      "height": 1.75,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 291802,
+      "name": "Noah Maieroni",
+      "short_name": "Maieroni",
+      "birth_date": "2005-08-10",
+      "height": null,
+      "preferred_foot": null
+    },
+    {
+      "id": 212077,
+      "name": "Ayom Majok",
+      "short_name": "Majok",
+      "birth_date": "2003-01-01",
+      "height": 1.82,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 211991,
+      "name": "Jonas Markovski",
+      "short_name": "Markovski",
+      "birth_date": "1999-03-17",
+      "height": 1.81,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 16212,
+      "name": "James McGarry",
+      "short_name": "McGarry",
+      "birth_date": "1998-04-09",
+      "height": 1.8,
+      "preferred_foot": "LEFT"
+    },
+    {
+      "id": 212070,
+      "name": "Dylan Meinicke",
+      "short_name": "Meinicke",
+      "birth_date": "2005-10-17",
+      "height": 1.82,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 68199,
+      "name": "Nikola Mileusnic",
+      "short_name": "Mileusnic",
+      "birth_date": "1993-07-17",
+      "height": 1.8,
+      "preferred_foot": "BOTH"
+    },
+    {
+      "id": 211994,
+      "name": "Scott Neville",
+      "short_name": "Neville",
+      "birth_date": "1989-01-11",
+      "height": 1.87,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 211995,
+      "name": "James Nikolovski",
+      "short_name": "Nikolovski",
+      "birth_date": "2002-04-02",
+      "height": 1.86,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 305122,
+      "name": "Jackson O'Reilly",
+      "short_name": "O'Reilly",
+      "birth_date": "2008-04-29",
+      "height": 1.9,
+      "preferred_foot": null
+    },
+    {
+      "id": 25801,
+      "name": "Jay O'Shea",
+      "short_name": "O'Shea",
+      "birth_date": "1988-08-10",
+      "height": 1.83,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 228731,
+      "name": "Ivan Ozzi",
+      "short_name": "Ozzi",
+      "birth_date": "2004-01-28",
+      "height": 1.88,
+      "preferred_foot": "LEFT"
+    },
+    {
+      "id": 211992,
+      "name": "Alex Parsons",
+      "short_name": "Parsons",
+      "birth_date": "2000-01-06",
+      "height": 1.8,
+      "preferred_foot": "LEFT"
+    },
+    {
+      "id": 211987,
+      "name": "Aaron Reardon",
+      "short_name": "Reardon",
+      "birth_date": "1999-03-11",
+      "height": 1.87,
+      "preferred_foot": "LEFT"
+    },
+    {
+      "id": 2550,
+      "name": "Marco Rojas",
+      "short_name": "Rojas",
+      "birth_date": "1991-11-05",
+      "height": 1.68,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 53049,
+      "name": "Michael Ruhs",
+      "short_name": "Ruhs",
+      "birth_date": "2002-08-27",
+      "height": 1.8,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 61925,
+      "name": "Youstin Salas",
+      "short_name": "Salas",
+      "birth_date": "1996-06-17",
+      "height": 1.73,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 314578,
+      "name": "Emmett Shaw",
+      "short_name": "Shaw",
+      "birth_date": "2009-04-03",
+      "height": null,
+      "preferred_foot": null
+    },
+    {
+      "id": 100114,
+      "name": "Walid Shour",
+      "short_name": "Shour",
+      "birth_date": "1996-06-10",
+      "height": 1.83,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 168287,
+      "name": "Milorad Stajic",
+      "short_name": "Stajic",
+      "birth_date": "2002-02-07",
+      "height": 1.78,
+      "preferred_foot": "BOTH"
+    },
+    {
+      "id": 117689,
+      "name": "Rafael Struick",
+      "short_name": "Struick",
+      "birth_date": "2003-03-27",
+      "height": 1.87,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 211988,
+      "name": "Kai Trewin",
+      "short_name": "Trewin",
+      "birth_date": "2001-05-18",
+      "height": 1.78,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 291801,
+      "name": "Dimitri Valkanis",
+      "short_name": "Valkanis",
+      "birth_date": "2005-10-18",
+      "height": 1.88,
+      "preferred_foot": "BOTH"
+    },
+    {
+      "id": 212065,
+      "name": "Justin Vidic",
+      "short_name": "Vidic",
+      "birth_date": "2004-04-29",
+      "height": 1.87,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 30066,
+      "name": "Georgios Vrakas",
+      "short_name": "Vrakas",
+      "birth_date": "2001-04-28",
+      "height": 1.8,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 212039,
+      "name": "Thomas Waddingham",
+      "short_name": "Waddingham",
+      "birth_date": "2005-04-05",
+      "height": 1.85,
+      "preferred_foot": "LEFT"
+    },
+    {
+      "id": 55098,
+      "name": "Ben Warland",
+      "short_name": "Warland",
+      "birth_date": "1996-09-04",
+      "height": 1.85,
+      "preferred_foot": "LEFT"
+    },
+    {
+      "id": 211990,
+      "name": "Louis Zabala",
+      "short_name": "Zabala",
+      "birth_date": "2001-01-25",
+      "height": 1.75,
+      "preferred_foot": "RIGHT"
+    },
+    {
+      "id": 212054,
+      "name": "Adam Zimarino",
+      "short_name": "Zimarino",
+      "birth_date": "2001-08-28",
+      "height": 1.82,
+      "preferred_foot": "LEFT"
+    },
+    {
+      "id": 57034,
+      "name": "Harry Van der Saag",
+      "short_name": "Van der Saag",
+      "birth_date": "1999-10-29",
+      "height": 1.83,
+      "preferred_foot": "RIGHT"
+    }
+  ],
+  "summary": {
+    "total_matches": 18,
+    "record": {
+      "wins": 7,
+      "draws": 4,
+      "losses": 7
+    },
+    "goals_for": 21,
+    "goals_against": 20
   }
 }
