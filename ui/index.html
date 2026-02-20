@@ -926,6 +926,29 @@
         }
         
         questionInput.focus();
+
+        // Load live stats from API
+        (async function loadStats() {
+            try {
+                const res = await fetch('/api/data');
+                const d = await res.json();
+                const s = d.summary || {};
+                const r = s.record || {};
+                // Update sidebar
+                document.querySelectorAll('.record-item .value')[0].textContent = r.wins || 0;
+                document.querySelectorAll('.record-item .value')[1].textContent = r.draws || 0;
+                document.querySelectorAll('.record-item .value')[2].textContent = r.losses || 0;
+                // Update badge
+                document.querySelector('.header-badge').innerHTML = '<span class="dot"></span> ' + (s.total_matches || 0) + ' matches loaded';
+                // Update avg xG if available
+                if (d.matches && d.matches.length > 0) {
+                    const avgXg = d.matches.reduce((sum, m) => sum + (m.metrics?.expected_goals?.packing_xg || 0), 0) / d.matches.length;
+                    document.querySelectorAll('.mini-stat .value')[0].textContent = avgXg.toFixed(2);
+                    const avgPoss = d.matches.reduce((sum, m) => sum + (m.metrics?.possession?.ball_possession_ratio || 0), 0) / d.matches.length;
+                    if (avgPoss > 0) document.querySelectorAll('.mini-stat .value')[1].textContent = Math.round(avgPoss * 100) + '%';
+                }
+            } catch(e) { console.log('Stats load error:', e); }
+        })();
     </script>
 </body>
 </html>
