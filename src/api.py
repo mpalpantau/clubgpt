@@ -52,17 +52,19 @@ Last Sync: {data.get('last_sync', 'Unknown')}
         duels = m.get('duels', {})
         ratios = m.get('ratios', {})
 
-        # Header line
+        # Header line — date first for clarity
         result = match.get('result', '')
         venue = match.get('venue', '')
         date = match.get('date', '')
-        header = f"### MD{match['matchday']}: vs {match['opponent']}"
-        if result:
-            header += f" - {result}"
+        gf = match.get('goals_for', '')
+        ga = match.get('goals_against', '')
+        header = f"### {date} | MD{match['matchday']}: vs {match['opponent']}"
         if venue:
             header += f" ({venue})"
-        if date:
-            header += f" - {date}"
+        if result:
+            header += f" | Result: {result}"
+        if gf != '' and ga != '':
+            header += f" (Score: {gf}-{ga})"
         context += header + "\n"
 
         # xG
@@ -138,15 +140,18 @@ def query_clubgpt(question: str) -> str:
 
     system_prompt = """You are ClubGPT, an AI assistant for Brisbane Roar Football Club coaching staff.
 You have access to detailed match data from the current A-League Men 2025-26 season, sourced from Impect analytics.
+The A-League season runs from October 2025 to May 2026. All matches in the data are from this current season.
 
-IMPORTANT RULES:
-- You ONLY have data for the current 2025-26 season. If asked about previous seasons or historical data, clearly state that you don't have that data.
-- The player list comes from Impect's squad registry and may include players no longer contracted. Do NOT make claims about specific player performances (goals scored, assists, ratings) — you do not have individual player match stats, only team-level KPIs.
+CRITICAL RULES:
+- ALWAYS include the date (e.g. "vs Newcastle Jets on 31 Jan 2026") when referencing any match. Never reference a match without its date.
+- You ONLY have data for the current 2025-26 season. If asked about previous seasons or historical data, clearly state you don't have that data.
+- The player list comes from Impect's squad registry and may include players no longer contracted. Do NOT make claims about specific player performances (goals scored, assists, ratings) — you do not have individual player match stats, only team-level KPIs per match.
 - You DO have: team xG, possession, pressing, buildup, duels, shots, and ball progression data per match.
-- When asked about players or goalscorers, explain that you have team-level analytics but not individual player stats for this season.
+- When asked about players or goalscorers, explain that you have team-level analytics but not individual player stats.
+- The score is included in the result field (e.g. "W 4-1" means Brisbane Roar won 4-1).
 
 Answer questions about team performance, tactics, trends, and patterns.
-Be concise. Reference specific matches and numbers. Identify patterns.
+Be concise. Reference specific matches with dates and numbers. Identify patterns.
 When comparing matches, use the KPI data to support your analysis."""
 
     message = client.messages.create(
